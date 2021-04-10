@@ -1,0 +1,37 @@
+import example.*
+
+object superRaton {	
+	method velocidad() = 1000000
+}
+
+describe "tom" {
+	
+	test "puede atrapar a un raton que corre mas lento" {
+		assert.that(
+			tom.puedeAtrapar(jerry)
+		)
+	}
+	
+	test "no puede atrapar a un raton mas rapido" {
+		tom.energia(10) //contexto
+		
+		//ejecucion
+		const puedeAtrapar = 
+			tom.puedeAtrapar(jerry) 
+		
+		//verificacion
+		assert.notThat(puedeAtrapar)
+		
+		//assert.notThat(
+		//	tom.puedeAtrapar(superRaton)
+		//)
+	}
+	
+	test "corre a raton" {
+		assert.fail("implementar")
+	}
+
+	test "velocidad" {
+		assert.fail("implementar")
+	}
+}

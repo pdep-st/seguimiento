@@ -1,0 +1,12 @@
+import dominio.*
+
+test "deberia ser caro si supera los 500 pesos" {
+	const elPrincipito = new Libro()
+	elPrincipito.aumentar(401);
+	assert.that(elPrincipito.esCaro())
+}
+
+test "deberia no ser caro si no supera los 500 pesos" {
+	const elPrincipito = new Libro()
+	assert.notThat(elPrincipito.esCaro())
+}
