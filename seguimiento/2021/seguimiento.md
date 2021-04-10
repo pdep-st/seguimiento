@@ -2,7 +2,7 @@
 
 ## Administrativo
 
-* Cronograma
+* [Cronograma](https://docs.google.com/spreadsheets/d/1KRJq0EiuG1aEepJb_QJnmqoH33QtFuefZSrw-qxv1Dg/edit#gid=1333189774)
 * Clase de presentación
   * Presentación utilizada
 * Link a Mumuki del curso: _Proximamente_
