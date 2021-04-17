@@ -11,7 +11,7 @@
 
 ## Paradigma Funcional
 
-* Clase 1 - [Introducción](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/intro.md) e [introducción a funcional](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/funcional/clase-1.md) 
+* Clase 1 - [Introducción](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/intro.md) e [introducción a funcional](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/funcional/clase-1.md)
 * Clase 2 - Funciones partidas y pattern matching - Tipos y clases de tipos
 * Clase 3 - Tuplas - Aplicación Parcial
 * Clase 4 - Aplicación Parcial - Tipos compuestos
