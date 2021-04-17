@@ -18,13 +18,15 @@
 
 ### Lecturas recomendadas
 
-* [Apunte - excepto guardas](https://docs.google.com/document/d/1W5BcOmIJMCylqAjqPw1RzPlujycbvNJueh8-Uyc2fMY)
+* [Introducción de conceptos](https://docs.google.com/document/d/1QP1ftd6jvAlVZOAsVPJ_1I0O7WW9MaIrn6zfW-iJdrY/edit)
+* [Introducción a Funcional - excepto guardas](https://docs.google.com/document/d/1W5BcOmIJMCylqAjqPw1RzPlujycbvNJueh8-Uyc2fMY)
 
 ### Tareas para la clase siguiente
 
 * [Sumarse a Discord](https://discord.gg/DJrT7W)
     Recuerden que una vez entrado tienen que cambiar su nickname al nombre completo y luego mandar un mensaje en el lobby para que les habilitemos los canales de
 * [Tutorial](https://youtu.be/A7eZOivOid4)
+* Instalate haskell
 
 ## Videos complementarios
 
