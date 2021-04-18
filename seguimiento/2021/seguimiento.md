@@ -4,7 +4,7 @@
 
 * [Cronograma](https://docs.google.com/spreadsheets/d/1KRJq0EiuG1aEepJb_QJnmqoH33QtFuefZSrw-qxv1Dg/edit#gid=1333189774)
 * Clase de presentación
-  * Presentación utilizada
+  * [Presentación utilizada](https://docs.google.com/presentation/d/1DvsCoMK6CM5yU8k3V5NSo-jqHh9K2Q7_Flah5l1EQUw/edit?usp=sharing)
 * Link a Mumuki del curso: _Proximamente_
 * [Link a Discord](https://discord.gg/aq52W39KKT)
 * Formulario Inscripción a la planilla
