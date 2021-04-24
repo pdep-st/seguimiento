@@ -18,7 +18,8 @@ doble numero = 2 * numero
 largoMaximo = 100
 
 -- tresVecesDoble numero = 
---    doble (doble (doble numero))
+--   even (doble (doble (doble numero)))
+
 tresVecesDoble :: Int -> Int
 tresVecesDoble numero =
   (doble . doble . doble) numero

@@ -1,6 +1,6 @@
 # Funcional - Clase 1
 
-## Qué vamos a aprender?
+## ¿Qué vamos a aprender?
 
 * ¿Qué es una función y como de define?
 * ¿Qué es una variable?
@@ -27,6 +27,8 @@
     Recuerden que una vez entrado tienen que cambiar su nickname al nombre completo y luego mandar un mensaje en el lobby para que les habilitemos los canales de
 * [Tutorial](https://youtu.be/A7eZOivOid4)
 * Instalate haskell
+  * [Instrucciones windows 10](https://github.com/pdep-utn/sabados-tarde/blob/master/instalaciones/ghci-windows-10.md)
+
 
 ## Videos complementarios
 
