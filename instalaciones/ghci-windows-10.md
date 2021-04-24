@@ -15,3 +15,10 @@
 
 * Abrir nuevamente sin modo administrador y verificar que esta ghci con el comando `ghci`
 
+##
+
+En el caso que el cmd no reconozca `ghci` 
+
+* chequear que esta configurado en la variable de entorno `PATH` ([Instructivo](https://www.softzone.es/windows-10/como-se-hace/cambiar-path-variables-entorno/))
+* Si no esta agregar una nueva linea que apunte a la carpeta donde esta ghc
+  * En mi instalación `%ChocolateyInstall%\lib\ghc`
