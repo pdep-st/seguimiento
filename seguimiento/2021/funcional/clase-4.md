@@ -17,6 +17,8 @@
 
 ## Para hacer después de la clase
 
+* [Repaso - Leer Apunte Composición - Aplicación Parcial](https://docs.google.com/document/d/1n7TPE2qRpFSnj95lIZFD-q7Ko_DT9XZLH9_kEkNClrU/edit?usp=sharing) o [hacer guía de Mumuki](https://mumuki.io/pdep-utn/lessons/692-programacion-funcional-aplicacion-parcial-y-orden-superior)
+* [Guía práctica - Mumuki - Práctica aplicación parcial](https://mumuki.io/pdep-utn/lessons/693-programacion-funcional-practica-aplicacion-parcial-y-orden-superior)
 * [Repaso - Leer Apunte Modelado de Información (Listas)](https://docs.google.com/document/d/11C2UAbP70dP7sTID-ZxJm_a-5ypKxQUEuZr6GVk5yFI/edit#heading=h.x2xuqlkw85oe)
-* [Repaso - Leer Apunte Composición - Aplicación Parcial](https://docs.google.com/document/d/1n7TPE2qRpFSnj95lIZFD-q7Ko_DT9XZLH9_kEkNClrU/edit?usp=sharing)
+* [Guía práctica - Mumuki - Listas](https://mumuki.io/pdep-utn/lessons/695-programacion-funcional-listas)
 * [Trabajo Práctico - Entrega #1](https://docs.google.com/document/d/15M2-5Rbb_KvyFue902fmopaTGJ00xaayVVHOVWUAcCM/edit?usp=sharing)
