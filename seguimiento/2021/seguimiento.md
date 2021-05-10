@@ -14,8 +14,8 @@
 * Clase 1 - [Introducción](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/intro.md) e [introducción a funcional](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/funcional/clase-1.md)
 * Clase 2 - [Funciones partidas - Composición - Tipos y clases de tipos](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/funcional/clase-2.md)
 * Clase 3 - [Pattern Matching - Tuplas](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/funcional/clase-3.md)
-* Clase 4 - [Aplicación Parcial - Listas - Orden Superior](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/funcional/clase-4.md)
-* Clase 5 - Data
+* Clase 4 - [Aplicación Parcial - Listas](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/funcional/clase-4.md)
+* Clase 5 - Data - Orden Superior
 * Clase 6 - Constructores de listas / Definiciones locales
 * Clase 7 - Fold
 * Clase 8 - Evaluación Diferida - Listas Infinitas
