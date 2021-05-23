@@ -13,7 +13,7 @@
 * [Presentación clase](https://docs.google.com/presentation/d/13QNit2qVMY7V-XJcUX7ZV7aSO7DRmMyGse4i6sXwoP8/edit#slide=id.gcd6f1c6e90_0_71)
 * [Ejercicio hecho en clase](https://docs.google.com/document/d/1rHut9mKKa3ABxQGyQ2teRbE6WRuytsGH_Y9wj-bBMb8/edit#)
 * [Código de clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/funcional/practica/clase4.hs)
-* [Video de clase](https://www.youtube.com/playlist?list=PLtMHMXFOjfDAp5WPRCsX36g8kwqKr1IOa)
+* [Video de clase](https://www.youtube.com/watch?v=ygWut8XAEkQ&list=PLtMHMXFOjfDAp5WPRCsX36g8kwqKr1IOa&index=6&ab_channel=PdeP-UTNFRBA-S%C3%A1badosTardePdeP-UTNFRBA-S%C3%A1badosTarde)
 
 ## Para hacer después de la clase
 
