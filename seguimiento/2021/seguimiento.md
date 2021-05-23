@@ -16,7 +16,7 @@
 * Clase 3 - [Pattern Matching - Tuplas](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/funcional/clase-3.md)
 * Clase 4 - [Aplicación Parcial - Listas](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/funcional/clase-4.md)
 * Clase 5 - [Data - Orden Superior](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/funcional/clase-5.md)
-* Clase 6 - Constructores de listas / Definiciones locales
+* Clase 6 - [Constructores de listas / Definiciones locales](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/funcional/clase-6.md)
 * Clase 7 - Fold
 * Clase 8 - Evaluación Diferida - Listas Infinitas
 * Clase 9 - Currificación
