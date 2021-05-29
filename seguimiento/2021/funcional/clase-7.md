@@ -1,0 +1,23 @@
+# Funcional - Clase 7
+
+## ¿Qué vamos a aprender?
+
+* Repaso de conceptos
+  * Pattern Matching en Listas
+  * Definiciones Locales (Where / Lambda)
+* Fold
+* Práctica
+
+## Material utilizado
+
+* [Presentación clase](https://docs.google.com/presentation/d/1UUG8QHsCkzDj8uC2RF4cqSeNgfcri5n1BFSfoEYkP4E/edit?usp=sharing)
+* [Enunciado del Ejercicio Hecho en Clase](https://docs.google.com/document/d/1ka4CJhZJBNtUOS7AbvTL1qTJnHGOIihdEp92mYfKzpo/edit#)
+* Código de clase: _Próximamente_
+* [Video de clase](https://www.youtube.com/playlist?list=PLtMHMXFOjfDAp5WPRCsX36g8kwqKr1IOa)
+
+## Para hacer después de la clase
+
+* [Git - Apunte](https://docs.google.com/document/d/1nadC6-rwR2eRC0FYFWuq22pCRyZWXmCiPBuQ0cD-vMI/edit#heading=h.r9wuhoi4rpgq)
+* [Git - Video](https://www.youtube.com/watch?v=rRKe7l-ZNvM)
+* [Apunte - Fold](https://docs.google.com/document/d/1jSrU7lVMan4nbHBETGqvO5VpqJI0KXVWtH7fqnVASPU).
+* [Práctica Mumuki - Fold](https://mumuki.io/pdep-utn/lessons/744-programacion-funcional-dominar-el-mundo-con-nada)
