@@ -19,5 +19,7 @@
 
 * [Git - Apunte](https://docs.google.com/document/d/1nadC6-rwR2eRC0FYFWuq22pCRyZWXmCiPBuQ0cD-vMI/edit#heading=h.r9wuhoi4rpgq)
 * [Git - Video](https://www.youtube.com/watch?v=rRKe7l-ZNvM)
+* [Video Github classroom - Tarea individual](https://youtu.be/bA1EE9TzBzY)
+* [Video Github classroom - Tarea grupal](https://youtu.be/GSKq0GF2qbE)
 * [Apunte - Fold](https://docs.google.com/document/d/1jSrU7lVMan4nbHBETGqvO5VpqJI0KXVWtH7fqnVASPU).
 * [Práctica Mumuki - Fold](https://mumuki.io/pdep-utn/lessons/744-programacion-funcional-dominar-el-mundo-con-nada)
