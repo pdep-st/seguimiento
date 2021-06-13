@@ -13,3 +13,6 @@
 * [Video de clase](https://www.youtube.com/playlist?list=PLtMHMXFOjfDAp5WPRCsX36g8kwqKr1IOa)
 
 ## Para hacer después de la clase
+
+* Repasar que se viene el parcial 🤓
+* Ver el video con la explicación de [currificación + aplicación parcial](https://youtu.be/N-Fh6Zf89HU)
