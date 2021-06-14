@@ -11,7 +11,7 @@
 
 * [Presentación clase](https://docs.google.com/presentation/d/1JC8lgxscb_RKepo07GK8FPQfJKPvEAVZ8LQgtf2PofM/edit#slide=id.gdec717fdfe_0_894)
 * [Código de clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/funcional/practica/clase8.hs)
-* [Video de clase](https://www.youtube.com/playlist?list=PLtMHMXFOjfDAp5WPRCsX36g8kwqKr1IOa)
+* [Video de clase](https://www.youtube.com/watch?v=Vh6WxN8H1pA)
 
 ## Para hacer después de la clase
 
