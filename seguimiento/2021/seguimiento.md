@@ -26,7 +26,7 @@
 
 ## Paradigma Lógico
 
-* Clase 1 - Predicados, Universo Cerrado, Tipos de Consultas e Inversibilidad
+* Clase 1 - [Predicados, Universo Cerrado, Tipos de Consultas e Inversibilidad](https://github.com/pdep-utn/sabados-tarde/blob/master/seguimiento/2021/logico/clase-1.md)
 * Clase 2 - not/2, forall/2
 * Clase 3 - Tipos complejos - Functores / Aritmética
 * Clase 4 - Listas
