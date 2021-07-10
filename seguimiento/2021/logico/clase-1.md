@@ -15,7 +15,7 @@
 ## Material utilizado
 
 * [Video - Introducción a lógico](https://www.youtube.com/watch?v=4M-lzIOhVbI)
-* [Video de clase](https://www.youtube.com/watch?v=Qe-MAxhrYW4&list=PLtMHMXFOjfDAp5WPRCsX36g8kwqKr1IOa)
+* [Video de clase](https://youtu.be/hMtsQfL01WQ)
 
 ## Para hacer después de la clase
 
