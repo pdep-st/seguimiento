@@ -3,6 +3,8 @@
 ## ¿Qué vamos a aprender?
 
 * Repaso
+  * not/1
+  * forall/2
 * Functores
 * Aritmética
 
