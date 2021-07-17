@@ -27,7 +27,7 @@
 ## Paradigma Lógico
 
 * Clase 1 - [Predicados, Universo Cerrado, Tipos de Consultas e Inversibilidad](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/logico/clase-1.md)
-* Clase 2 - not/2, forall/2
+* Clase 2 - [not/2, forall/2](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/logico/clase-2.md)
 * Clase 3 - Tipos complejos - Functores / Aritmética
 * Clase 4 - Listas
 * Clase 5 - Recursividad + Pattern Matching de listas
