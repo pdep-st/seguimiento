@@ -11,7 +11,7 @@
 ## Material utilizado
 
 * [Presentación de la Clase](https://docs.google.com/presentation/d/1Dyb59JIbNsCSsGEOR9upAhLTJcQQ9r32Y8ualYU_tC4/edit#slide=id.g84f5639649_0_589)
-* Video de Clase: _Próximamente_
+* [Video de Clase](https://www.youtube.com/watch?v=LTlbei6YUzQ)
 * Código de Clase: _Próximamente_
 
 ## Para hacer después de la clase
