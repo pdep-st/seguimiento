@@ -12,7 +12,7 @@
 
 * [Presentación de la Clase](https://docs.google.com/presentation/d/1ZPGuTDunasTxz4imhNgsQrsYDnZEc10JzI_mUBQ3ovE/edit#slide=id.p)
 * [Video de Clase](https://www.youtube.com/watch?v=LTlbei6YUzQ&list=PLtMHMXFOjfDAp5WPRCsX36g8kwqKr1IOa&index=14&ab_channel=PdeP-UTNFRBA-S%C3%A1badosTarde)
-* Código de Clase: _Próximamente_
+* [Código de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/logico/practica/clase-4.pl)
 
 ## Para hacer después de la clase
 
