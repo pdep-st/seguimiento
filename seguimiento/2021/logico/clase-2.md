@@ -12,5 +12,5 @@
 
 * [Video de la clase](https://www.youtube.com/watch?v=uu0ab92olg4)
 * [Presentación de la clase](https://docs.google.com/presentation/d/13SpdlQWvrlzYeLm5W2HSAaaJzHVqbvmmUDyQC8MC7UA/edit?usp=sharing)
-* [Código de clase](https://github.com/pdep-utn/sabados-tarde/blob/master/seguimiento/2021/logico/practica/clase-2.pl)
+* [Código de clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/logico/practica/clase-2.pl)
 
