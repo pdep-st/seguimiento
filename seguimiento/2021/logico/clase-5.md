@@ -15,5 +15,4 @@
 
 ## Para hacer después de la clase
 
-* [Recursividad](https://docs.google.com/document/d/16SMBS6i_wjkdcVztpUDb-WTfASnCXQjld7VyKLUpC8A)
-* [Recursividad (pág 41)](http://www.pdep.com.ar/material/apuntes/Paradigma%20Logico%202008.pdf?attredirects=0&d=1)
+* [Apunte - Recursividad](https://docs.google.com/document/d/16SMBS6i_wjkdcVztpUDb-WTfASnCXQjld7VyKLUpC8A)
