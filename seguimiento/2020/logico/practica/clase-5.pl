@@ -61,7 +61,7 @@ head(X, [X|_]).
 tail(Xs, [_|Xs]).
 
 longitud([], 0).
-longitud([X | Xs], Longitud):-
+longitud([_ | Xs], Longitud):-
     longitud(Xs, LongitudCola),
     Longitud is 1 + LongitudCola.
 
