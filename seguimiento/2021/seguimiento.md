@@ -30,8 +30,8 @@
 * Clase 2 - [not/2, forall/2](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/logico/clase-2.md)
 * Clase 3 - [Tipos complejos - Functores / Aritmética](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/logico/clase-3.md)
 * Clase 4 - [Listas](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/logico/clase-4.md)
-* Clase 5 - Recursividad + Pattern Matching de listas
-* Clase 6 - Code Smells - Repaso
+* Clase 5 - [Recursividad + Pattern Matching de listas](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/logico/clase-5.md)
+* Clase 6 - [Code Smells - Repaso](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/logico/clase-6.md)
 
 * Posible solución parcial
 
