@@ -9,7 +9,6 @@
 ## Material utilizado
 
 * [Presentación de la Clase](https://docs.google.com/presentation/d/1ZOCKaO9blN9C8-c7bxxOd3g-tH6VyCuFrSHt4703wzI/edit?usp=sharing)
-* [Quizziz](https://quizizz.com/join?gc=41419734)
 
 ## Para hacer después de la clase
 
