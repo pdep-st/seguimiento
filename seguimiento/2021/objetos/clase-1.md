@@ -10,8 +10,8 @@
 
 ## Material utilizado
 
-* [Presentación de la Clase](https://docs.google.com/presentation/d/1YcZLrOXtNAuQuD82ctAoHDp4jZe1Ol9AbJxtG2GWgKU/edit?usp=sharing)
-* Código de la Clase: _Próximamente_
+* [Presentación](https://docs.google.com/presentation/d/1YcZLrOXtNAuQuD82ctAoHDp4jZe1Ol9AbJxtG2GWgKU/edit?usp=sharing)
+* Código: _Próximamente_
 * Video de Clase: _Próximamente_
 
 ## Para hacer después de la clase
