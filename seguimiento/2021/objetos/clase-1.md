@@ -1,4 +1,4 @@
-# Lógico - Clase 1
+# Objetos - Clase 1
 
 ## ¿Qué vamos a aprender?
 
