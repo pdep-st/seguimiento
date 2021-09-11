@@ -24,5 +24,4 @@
 * [Guía teorica - Mumuki - Lección 1](https://mumuki.io/pdep-utn/lessons/712-programacion-con-objetos-objetos-y-mensajes)
 * [Guía teorica - Mumuki - Lección 2](https://mumuki.io/pdep-utn/lessons/713-programacion-con-objetos-metodos-y-estado)
 * [Guía teorica - Mumuki - Lección 3](https://mumuki.io/pdep-utn/lessons/714-programacion-con-objetos-referencias)
-* [Ejercicio 3 - Sueldo de pepe](https://docs.google.com/document/d/1DQNuJwO3m6o_0-31tld94eJKJSQQ2TsjqBBY_rOVho4)
 
