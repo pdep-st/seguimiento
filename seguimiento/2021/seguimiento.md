@@ -38,7 +38,7 @@
 ## Paradigma de Objetos
 
 * [Clase 1 - Introducción a objetos - Envio de mensajes - Autoreferencia - Atributos](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/objetos/clase-1.md)
-* Clase 2 - Polimorfismo - Testing
+* [Clase 2 - Polimorfismo - Testing](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/objetos/clase-2.md)
 * Clase 3 - Práctica!!
 * Clase 4 - Objetos anónimos - Clases
 * Clase 5 - Manejo de errores

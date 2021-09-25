@@ -12,7 +12,7 @@
 
 * [Presentación](https://docs.google.com/presentation/d/1YcZLrOXtNAuQuD82ctAoHDp4jZe1Ol9AbJxtG2GWgKU/edit?usp=sharing)
 * [Código](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/objetos/practica/clase-1/mascotas.wlk)
-* Video de Clase: _Próximamente_
+* [Video de Clase](https://www.youtube.com/watch?v=_JUZM89ldX0)
 
 ## Para hacer después de la clase
 * [Instalar Wollok](https://www.pdep.com.ar/software/wollok)
