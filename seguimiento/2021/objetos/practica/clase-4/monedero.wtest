@@ -1,0 +1,57 @@
+import monedero.*
+
+describe "Persona" {
+	
+	const persona = new Persona(nombre = "martin", edad = 27)
+	
+	const personaConPlatita = new Persona(
+		monedero = new Monedero(saldo = 200), 
+		nombre = "ricky"
+	)
+
+	test "al ahorrar se incrementa la plata" {
+		persona.ahorrar(1000)
+		assert.equals(1000, persona.saldo())
+	}
+	
+	test "devuelve su saldo correctamente" {
+		assert.equals(0, persona.saldo())
+	}
+
+	test "al gastar descuento plata" {
+		personaConPlatita.gastar(100)
+		assert.equals(100, personaConPlatita.saldo())
+	}
+	
+	test "al intentar gastar mas plata de la ahorrada falla" {
+		const saldoViejo = persona.saldo()
+		//assert.throwsException({ persona.gastar(100) })
+		assert.throwsExceptionWithMessage(
+			"no podes sacar mas plata de la que tenes", 
+			{ persona.gastar(100) }
+		)
+		assert.equals(saldoViejo, persona.saldo())
+		assert.equals(0, persona.gastosSemanales())
+		
+	}
+	
+	// ESTA OPCION NO SE USA!!! solo es para mostrar el try :)
+	test "catch manual" {
+		const saldoViejo = personaConPlatita.saldo()
+		try {
+			personaConPlatita.gastar(-100)
+			assert.fail("no deberia ejecutarse")
+		} catch exception {
+			assert.equals("no se puede descontar numeros negativos", exception.message())
+		}
+	}
+	// -----------------
+	
+	test "al intentar gastar un numero negativo falla" {
+		const saldoViejo = persona.saldo()
+		assert.throwsExceptionWithMessage("no se puede descontar numeros negativos", { persona.gastar(-100) })
+		assert.equals(saldoViejo, persona.saldo())
+	}
+	
+	
+}

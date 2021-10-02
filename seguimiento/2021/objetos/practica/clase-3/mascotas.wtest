@@ -1,0 +1,19 @@
+import mascotas.*
+import nacho.*
+
+describe "nacho juega" {
+	
+	var chila
+	
+	method initialize() {
+		chila = new MascotaConEnergia()
+		nacho.agregarMascota(chila)	
+	}
+
+	test "con una mascota" {
+		const energiaAntesDeJugar = chila.energia()
+		nacho.jugar()
+		assert.that(chila.energia() < energiaAntesDeJugar )
+	}
+	
+}
