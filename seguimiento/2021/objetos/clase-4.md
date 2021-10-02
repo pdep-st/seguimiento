@@ -9,6 +9,8 @@
 ## Material utilizado
 
 * Video de Clase: _Próximamente_
+* [Código](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/objetos/practica/clase-4)
+* [Diagramas](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/objetos/diagramas/clase-4)
 * [Quizizz](https://quizizz.com/join?gc=935455)
 
 ## Para hacer después de la clase

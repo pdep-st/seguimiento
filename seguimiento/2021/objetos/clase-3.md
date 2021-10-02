@@ -12,6 +12,7 @@
 ## Material utilizado
 
 * [Video de Clase](https://www.youtube.com/watch?v=qMRoso7SHAY&ab_channel=PdeP-UTNFRBA-S%C3%A1badosTarde)
+* [Código](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/objetos/practica/clase-3)
 * Diagramas:
   * [Diagrama 1](http://www.plantuml.com/plantuml/uml/bP6_QiCm4CRdw2b49XkAdo2O66VhKF3GpiVf6byhwyn9oj0_xrvXt1OtNUB5wBxZ-_6JZZ61fZnvCx8ZYwpeoHZq4AD5c5Z2YHv9NLQ8rXuEJ_SFRMlVpGxXHG95itkTua0egkpaxx6gpMwcAELlrq-NaBIhokQTlP0NP0UkDfzRRazAu4bbWxsbRQsRCyKaGqxG9GyXCS9tOobq70fZ88JimCdLO56025fTQ6JCNcfRxALKTewH9O0_KGzwXf-DXSuXaJu3akqNdy9SHs-tg_pdq2YVnzIqTfyZx5UAkNgq9i_DHxkDV-zscnufk3pvBm00)
   * [Diagrama 2](http://www.plantuml.com/plantuml/uml/VP0z3i8m38LdV0gh4o3H4qHHTuGOcIqtfKPfY-9auUVk36ahL2eyFdzF_kHA8uMOEW-jr0vP0di7m9vKiITk1pJcSZnRYq_0SJfI7Y8fR6xfIc6xW_TKuLOyVLNM2VbBD1AI9z5rHlheGaFiy9Grq9WnU_p0a7tAT2zVTYv0TbYcqzt50Y3_uM2ns1TpMhc-Jft_0000)
