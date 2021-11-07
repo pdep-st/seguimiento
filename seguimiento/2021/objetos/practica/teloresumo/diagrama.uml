@@ -1,0 +1,40 @@
+@startuml
+class Resumen {
+	intro
+	secciones
+	
+	agregarSeccion(seccion)
+	tieneReferencia() 
+	tieneCancion(cancion) 
+	duracion()
+	libreto()
+}
+
+class Seccion {
+	duracion
+	speech
+	
+	duracion() 
+	speech() 
+	tieneReferencia() 
+	tieneCancion(_cancion)
+}
+
+class SeccionMusicalizada {
+	cancion
+	tieneCancion(_cancion)
+}
+
+class SeccionReferencia  {
+	 resumen
+	 duracion()
+	 speech() 
+	 tieneReferencia() 
+}
+
+
+Resumen -> "*" Seccion
+SeccionMusicalizada -up-|> Seccion
+SeccionReferencia -up-|> Seccion
+SeccionReferencia -> Resumen
+@enduml
