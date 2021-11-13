@@ -44,4 +44,4 @@
 * Clase 5 - [Herencia](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/objetos/clase-5.md)
 * Clase 6 - [Herencia (redefinición - clase abstracta)](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/objetos/clase-6.md)
 * Clase 7 - [Herencia vs Composición - Listas reloaded](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/objetos/clase-7.md)
-* Clase 8 - Identidad vs Igualdad
+* Clase 8 - [Identidad vs Igualdad](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/objetos/clase-7.md)
