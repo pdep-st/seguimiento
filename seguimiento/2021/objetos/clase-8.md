@@ -8,7 +8,7 @@
 ## Material utilizado
 
 * [Video de la clase](https://www.youtube.com/watch?v=ak59GvLhDJc&ab_channel=PdeP-UTNFRBA-S%C3%A1badosTarde)
-* Ejercicio visto en clase: _Próximamente_
+* [Ejercicio visto en clase](https://docs.google.com/document/d/1Gt4WhECZvDmlqjWempskDMmLDvi-2s8WgOy01SvJbiQ/edit)
 * [Código hecho en clase](https://github.com/pdep-st/seguimiento/tree/main/seguimiento/2021/objetos/practica/teloresumo)
 
 ## Para hacer después de la clase
