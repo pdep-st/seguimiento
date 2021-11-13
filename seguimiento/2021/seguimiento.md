@@ -41,6 +41,6 @@
 * Clase 2 - [Polimorfismo - Testing](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/objetos/clase-2.md)
 * Clase 3 - [Objetos anónimos - Clases](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/objetos/clase-3.md)
 * Clase 4 - [Manejo de errores](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/objetos/clase-4.md)
-* Clase 5 - Herencia
+* Clase 5 - [Herencia](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2021/objetos/clase-5.md)
 * Clase 6 - Herencia vs Composición - Listas reloaded
 * Clase 7 - Identidad vs Igualdad
