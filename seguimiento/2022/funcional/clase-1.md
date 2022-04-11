@@ -9,7 +9,7 @@
 
 ## Material utilizado
 
-* [Código de clase](https://github.com/pdep-utn/sabados-tarde/blob/master/seguimiento/2022/funcional/practica/clase-1.hs)
+* [Código de clase](https://github.com/pdep-utn/sabados-tarde/blob/master/seguimiento/2022/funcional/practica/clase1.hs)
 
 ### Lecturas recomendadas
 
