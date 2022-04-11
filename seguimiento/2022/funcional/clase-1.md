@@ -9,7 +9,7 @@
 
 ## Material utilizado
 
-* [Código de clase](https://github.com/pdep-utn/sabados-tarde/blob/master/seguimiento/2022/funcional/practica/clase1.hs)
+* [Código de clase](https://github.com/pdep-utn/sabados-tarde/blob/main/seguimiento/2022/funcional/practica/clase1.hs)
 
 ### Lecturas recomendadas
 
@@ -22,7 +22,7 @@
     Recuerden que una vez entrado tienen que cambiar su nickname al nombre completo y luego mandar un mensaje en el lobby para que les habilitemos los canales de alumnos
 * [Tutorial](https://youtu.be/A7eZOivOid4)
 * Instalar haskell
-  * [Instrucciones windows 10](https://github.com/pdep-utn/sabados-tarde/blob/master/instalaciones/ghci-windows-10.md)
+  * [Instrucciones windows 10](https://github.com/pdep-utn/sabados-tarde/blob/main/instalaciones/ghci-windows-10.md)
 
 
 ## Videos complementarios
