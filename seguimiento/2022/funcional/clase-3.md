@@ -13,7 +13,7 @@
 
 ## Material utilizado
 
-* [Video de clase] (https://drive.google.com/file/d/1pwPr4UPBcZOkKPNzvXnYthPfphwVA09y/view?usp=sharing)
+* [Video de clase](https://drive.google.com/file/d/1pwPr4UPBcZOkKPNzvXnYthPfphwVA09y/view?usp=sharing)
 * [Presentación clase](https://docs.google.com/presentation/d/1qvJ8_IC-9BQ7Q1c-Un2mh3SPx8vl8UOSB9_f8JYekKk/edit#slide=id.g12592c9b570_0_175)
 * [Código de clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/practica/clase2.hs)
 
