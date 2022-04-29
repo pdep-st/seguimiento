@@ -11,6 +11,7 @@
 * Clase 1 - [Introducción](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/intro.md) e [introducción a funcional](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-1.md)
 * Clase 2 - [Composición, Guardas y Tipos](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-2.md)
 * Clase 3 - [Pattern Matching y Tuplas](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-3.md)
+* Clase 4 - [Aplicación Parcial y Listas](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-4.md)
 
 ## Paradigma Lógico
 
