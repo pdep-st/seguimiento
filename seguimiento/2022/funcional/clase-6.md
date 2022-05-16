@@ -3,6 +3,7 @@
 ## ¿Qué vamos a aprender?
 
 * Repaso de conceptos
+  * Data
   * Listas
   * Funciones de Orden Superior
 * Definiciones Locales (Where / Lambda)
@@ -10,7 +11,7 @@
 
 ## Material utilizado
 
-* Video de clase
+* [Video de clase](https://youtu.be/aONJ_GkvF0U)
 * [Presentación clase](https://docs.google.com/presentation/d/19yC-4y7vvB-v3ETNz_SmkRA22tLd9Osjg8BQqfRaAo4)
 * [Código de clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/practica/clase6.hs)
 

@@ -3,6 +3,7 @@ import Data.List
 
 -- Hora de Lectura
 -- (Titulo, Autor, Paginas)
+-- data Libro = Libro String, String, Int
 data Libro = Libro {
     titulo:: String,
     autor:: String,
