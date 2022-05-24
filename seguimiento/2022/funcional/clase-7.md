@@ -17,6 +17,6 @@
 
 ## Para hacer después de la clase
 
-* [Apunte - Fold](https://docs.google.com/document/d/1jSrU7lVMan4nbHBETGqvO5VpqJI0KXVWtH7fqnVASPU).
+* [Apunte - Fold](https://docs.google.com/document/d/1jSrU7lVMan4nbHBETGqvO5VpqJI0KXVWtH7fqnVASPU)
 * [Práctica Mumuki - Fold](https://mumuki.io/pdep-utn/lessons/744-programacion-funcional-dominar-el-mundo-con-nada)
 * [Enunciado TP 2da Entrega](https://docs.google.com/document/d/1J1uXaohkEs8ROhCH0jjpw38v_QUtvQUHQXuup_dAufY)
