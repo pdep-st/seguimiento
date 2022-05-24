@@ -9,6 +9,7 @@ data Libro = Libro {
 instance Eq Libro where
     (==) libro otroLibro = titulo libro == titulo otroLibro
 
+-- Funciones custom de operador
 -- (#) a = a
 
 instance Ord Libro where

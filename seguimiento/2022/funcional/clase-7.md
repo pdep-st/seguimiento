@@ -10,7 +10,7 @@
 
 ## Material utilizado
 
-* Video de clase
+* [Video de clase](https://youtu.be/8nMZhY05Ufk)
 * [Presentación clase](https://docs.google.com/presentation/d/1W7bd9MN-oBB71MfHJQLSppO4aND3-2DrxsmOLkuJbVo)
 * [Enunciado del Ejercicio Hecho en Clase](https://docs.google.com/document/d/1LeWBI6pg_7uNFN_yzS2DVuVHvD0M6PTlG1yK0lCvQVE/edit)
 * [Código de clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/practica/clase7.hs)
