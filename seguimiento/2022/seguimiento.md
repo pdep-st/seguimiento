@@ -15,6 +15,8 @@
 * Clase 5 - [Data - Orden Superior](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-5.md)
 * Clase 6 - [Constructores de listas / Definiciones locales](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-6.md)
 * Clase 7 - [Fold / Práctica](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-7.md)
+* Clase 8 - [Evaluación Diferida / Listas Infinitas](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-8.md)
+
 
 ## Paradigma Lógico
 
