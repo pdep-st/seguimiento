@@ -112,6 +112,8 @@ data Tiro = UnTiro {
 
 type Puntos = Int
 
+between n m x = elem x [n .. m]
+
 maximoSegun f = foldl1 (mayorSegun f)
 
 mayorSegun f a b
@@ -120,7 +122,6 @@ mayorSegun f a b
 
 -- 1
 -- a
-
 putter habilidad =
     UnTiro {
         velocidad = 10,
@@ -150,9 +151,10 @@ type Palo = (Habilidad -> Tiro)
 -- 2
 golpe persona palo = palo (habilidad persona)
 
---3
+-- 3
 tiroDetenido = UnTiro 0 0 0
 
+-- a
 tunelConRampita tiro
     | superaTunelConRampita = UnTiro {
         altura = 0,
@@ -161,3 +163,20 @@ tunelConRampita tiro
     }
     | otherwise = tiroDetenido
     where superaTunelConRampita = precision tiro > 90 && altura tiro == 0
+
+-- Hecho luego de la clase
+
+-- b
+laguna largo tiro
+    | superaLaguna = tiro {altura = altura tiro `div` largo}
+    | otherwise = tiroDetenido
+    where superaLaguna = velocidad tiro > 80 && between (altura tiro) 1 5
+
+-- c
+-- No importa si pasa o no, siempre se detiene
+hoyo _ = tiroDetenido 
+
+-- 4
+-- a
+palosUtiles persona obstaculo =
+    
