@@ -16,11 +16,12 @@
 * Clase 6 - [Constructores de listas / Definiciones locales](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-6.md)
 * Clase 7 - [Fold / Práctica](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-7.md)
 * Clase 8 - [Evaluación Diferida / Listas Infinitas](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-8.md)
+* Clase 9 - [Repaso / Currificación](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-9.md)
 
 
 ## Paradigma Lógico
 
-* Clase 1 - TBD
+* Clase 1 - [Intro a Lógico](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/logico/clase-1.md)
 
 
 ## Paradigma de Objetos
