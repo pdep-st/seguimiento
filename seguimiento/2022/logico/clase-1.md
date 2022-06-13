@@ -15,7 +15,7 @@
 ## Material utilizado
 
 * [Video - Introducción a lógico](https://www.youtube.com/watch?v=4M-lzIOhVbI)
-* Video de clase
+* [Video de clase](https://www.youtube.com/watch?v=ALbD8hYF9bg)
 * [Presentación de clase](https://docs.google.com/presentation/d/1dd4obXeEN2_dOmTeXOap3F1PXUILaNCEPfEoS071cDU)
 * [Código de clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/logico/practica/clase1.pl)
 
