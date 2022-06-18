@@ -8,7 +8,7 @@
 ## Material utilizado
 
 * [Presentación clase](https://docs.google.com/presentation/d/19SJHtbBSBGk0xCQutN7FueoGA_UU7E-xyv4tgaJ1cqc)
-* Video de clase
+* [Video de clase](https://youtu.be/5T6s7JP9y7M)
 * [Código de clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/practica/simulacro.hs)
 
 ## Para hacer después de la clase
