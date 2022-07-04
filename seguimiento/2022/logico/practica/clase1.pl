@@ -35,8 +35,8 @@ luminosa(casaDePan).
 % casa en venta y dicha casa también es luminosa
 % REGLA
 tranquilo(Vendedor):-
-    vende(Vendedor, Casa),
-    luminosa(Casa).
+    luminosa(Casa),
+    vende(Vendedor, Casa).
 
 % Y como sé si una casa es grande?
 % Es grande cuando tiene más de 3 ambientes
