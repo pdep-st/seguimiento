@@ -12,16 +12,19 @@
 * Clase 2 - [Composición, Guardas y Tipos](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-2.md)
 * Clase 3 - [Pattern Matching y Tuplas](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-3.md)
 * Clase 4 - [Aplicación Parcial y Listas](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-4.md)
-* Clase 5 - [Data - Orden Superior](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-5.md)
-* Clase 6 - [Constructores de listas / Definiciones locales](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-6.md)
-* Clase 7 - [Fold / Práctica](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-7.md)
-* Clase 8 - [Evaluación Diferida / Listas Infinitas](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-8.md)
-* Clase 9 - [Repaso / Currificación](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-9.md)
+* Clase 5 - [Data y Orden Superior](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-5.md)
+* Clase 6 - [Constructores de listas y Definiciones locales](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-6.md)
+* Clase 7 - [Fold y Práctica](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-7.md)
+* Clase 8 - [Evaluación Diferida y Listas Infinitas](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-8.md)
+* Clase 9 - [Repaso](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-9.md)
+* Clase 10 - [Currficación y Simulacro de Parcial](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/clase-9.md)
 
 
 ## Paradigma Lógico
 
 * Clase 1 - [Intro a Lógico](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/logico/clase-1.md)
+* Clase 2 - [not/1, forall/2 e Inversibilidad](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/logico/clase-2.md)
+* Clase 3 - [Functores y Aritmética](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/logico/clase-3.md)
 
 
 ## Paradigma de Objetos
