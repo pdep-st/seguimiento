@@ -113,6 +113,7 @@ noRindio(Alumno):- not(rindio(Alumno)).
 
 % aproboAnio(Alumno, Anio).
 
+
 aproboAnio(Alumno, Anio):-
    alumno(Alumno),
    anio(Anio),

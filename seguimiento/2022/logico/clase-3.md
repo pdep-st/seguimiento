@@ -11,7 +11,7 @@
 ## Material utilizado
 
 * [Presentación de la Clase](https://docs.google.com/presentation/d/1QNbXAAL8QAFK0yHpNP4yRiPCsWQxoD2fHAZD6YzSlOo)
-* Video de Clase
+* [Video de Clase](https://youtu.be/1vd0oVm2K6A)
 * [Código de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/logico/practica/clase3.pl)
 
 ## Para hacer después de la clase
