@@ -25,6 +25,7 @@
 * Clase 1 - [Intro a Lógico](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/logico/clase-1.md)
 * Clase 2 - [not/1, forall/2 e Inversibilidad](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/logico/clase-2.md)
 * Clase 3 - [Functores y Aritmética](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/logico/clase-3.md)
+* Clase 4 - [Listas, findall/3](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/logico/clase-4.md)
 
 
 ## Paradigma de Objetos
