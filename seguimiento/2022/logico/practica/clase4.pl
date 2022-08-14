@@ -8,6 +8,11 @@ practica(inia, futbol(0, 5, 20)).
 practica(porta, rugby(wing, 2)).
 % billar: no hay medallas
 practica(martin, billar).
+% basket: ligas, edad
+practica(manu, basket([nba, euroliga, argentina], 45)).
+practica(mario, basket([argentina], 33)).
+% polo
+practica(alan, polo).
 
 buenDeportista(Deportista):-
     practica(Deportista, Practica),
@@ -26,6 +31,16 @@ buenaPractica(rugby(wing,_)).
 
 buenaPractica(rugby(pilar,_)).    
 
+buenaPractica(basket(Ligas, _)):- 
+    length(Ligas, LigasJugadas),
+    LigasJugadas >= 2.
+
+buenaPractica(basket(Ligas, _)):- member(nba, Ligas).
+
+buenaPractica(basket(Ligas, _)):- member(euroliga, Ligas).
+
+buenaPractica(basket(_, Edad)):- Edad > 40.
+
 
 % Agregar un par de jugadores de basket, que se conoce en qué ligas jugó y su edad
 % un jugador de basket se considera que es una buena práctica si jugó en al menos dos ligas 
@@ -34,10 +49,17 @@ buenaPractica(rugby(pilar,_)).
     % Agregar a manu que juega al basket, jugó en argentina, euroliga, nba 
     % la edad actual que tiene (45)
 
-    % Agregar a mario que juega al basket, jugo solo en argentina, tiene 33 años
+    % Agregar a mario que juega al basket, jugó solo en argentina, tiene 33 años
 
 
 % Cuántos nadadores hay?
+nadadores(Cantidad):-
+    findall(
+        1,
+        practica(_, natacion(_, _, _)),
+        Nadadores
+    ),
+    length(Nadadores, Cantidad).
 
 
 % Agregar el sueldo de cada uno de los deportistas
@@ -47,10 +69,79 @@ buenaPractica(rugby(pilar,_)).
     % los de polo solo practican porque les gusta así que no les pagan.
     % los jugadores de basket es un monto base en el contrato y un bonus de 5k por c/liga en la que haya jugado.
 
-% Saber cuál es el monto que se gasta en deportes
 
-%% Saber si alguien cobra mas de un 1000000
+sueldo(Deportista, Sueldo):-
+    practica(Deportista, Deporte),
+    sueldoSegunDeporte(Deportista, Deporte, Sueldo).
 
+contrato(messi, 2000000000).
+contrato(inia, 10000).
+
+contrato(manu, 1900000).
+contrato(mario, 10000).
+
+sueldoSegunDeporte(_, natacion(_,_,Medallas), Sueldo):-
+    Sueldo is Medallas * 3000.
+
+sueldoSegunDeporte(Deportista, futbol(_,_,Expulsiones), Sueldo):-
+    contrato(Deportista, Contrato),
+    Sueldo is Contrato - 1000 * Expulsiones.
+
+sueldoSegunDeporte(_, rugby(_,_), 3000).
+
+sueldoSegunDeporte(Deportista, basket(Ligas,_), Sueldo):-
+    contrato(Deportista, Contrato),
+    length(Ligas, CantidadDeLigas),
+    Sueldo is Contrato + CantidadDeLigas * 5000.
+
+sueldoSegunDeporte(_, polo, 0).
+sueldoSegunDeporte(_, billar, 0).
+
+
+% Saber cuál es el monto que se paga a todos los deportistas
+gastoEnDeportes(Gasto):-
+    findall(
+        Sueldo,
+        sueldo(_, Sueldo),
+        Sueldos
+        ),
+    sumlist(Sueldos, Gasto).
+
+
+%% Saber si alguien cobra mas de un 1.000.000
+% ESTO ESTÁ MAL!!!!!!
+alguienEsMillonario():-
+    findall(
+        Sueldo,
+        sueldo(_, Sueldo),
+        Sueldos
+        ),
+    max_member(MayorSueldo, Sueldos),
+    MayorSueldo > 1000000.
+
+% ESTO ESTÁ MAL!!!!!!
+alguienEsMillonario2():-
+    findall(
+        Sueldo,
+        (sueldo(_, Sueldo), Sueldo > 1000000),
+        Sueldos
+        ),
+    length(Sueldos, Cantidad),
+    Cantidad > 0.
+
+% ESTO ESTÁ BIEN =)
+alguienEsMillonario3():-
+    sueldo(_, Sueldo),
+    Sueldo > 1999995000.
+
+alMenosDosMillonarios():-
+    esMillonario(Alguien),
+    esMillonario(Otro),
+    Alguien \= Otro.
+
+esMillonario(Deportista):-
+    sueldo(Deportista, Sueldo),
+    Sueldo > 1000000.
 
 
 %%% Jugando al TEG
@@ -73,8 +164,24 @@ ocupa(java, negro, 4).
 ocupa(borneo, negro, 1).
 
 % ¿Cuántos países ocupa un jugador?
+paisesOcupados(Jugador, CantidadOcupados):-
+    ocupa(_, Jugador, _),
+    findall(
+        Pais,
+        ocupa(Pais, Jugador, _),
+        Paises
+    ),
+    length(Paises, CantidadOcupados).
 
 % ¿Cuántos países están cargados? Un país está cargado cuando tiene más de 7 fichas.
+
+paisesCargados(Cantidad):-
+    findall(
+        Pais,
+        (ocupa(Pais, _, Fichas), Fichas > 7),
+        Paises
+        ),
+        length(Paises, Cantidad).
 
 % ¿Qué jugadores ocupan países con más de 5 fichas?
 
