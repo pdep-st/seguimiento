@@ -26,8 +26,10 @@
 * Clase 2 - [not/1, forall/2 e Inversibilidad](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/logico/clase-2.md)
 * Clase 3 - [Functores y Aritmética](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/logico/clase-3.md)
 * Clase 4 - [Listas, findall/3](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/logico/clase-4.md)
+* Clase 5 - [Recursividad](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/logico/clase-5.md)
+* Clase 6 - [Combinatoria y Simulacro](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/logico/clase-6.md)
 
 
 ## Paradigma de Objetos
 
-* Clase 1 - TBD
+* Clase 1 - [Combinatoria y Simulacro](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/objetos/clase-1.md)
