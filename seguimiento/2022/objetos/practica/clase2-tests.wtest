@@ -1,0 +1,41 @@
+import cargas.*
+
+test "camion cerealero su velocidad es 60 si no esta deteriorado" {
+	const velocidad = camionCerealero.velocidadMaxima()
+	assert.equals(60, velocidad)
+}
+
+test "camion cerealero se disminuye la velocidad si esta deteriorado" {
+	camionCerealero.nivelDeterioro(1)
+	const velocidad = camionCerealero.velocidadMaxima()
+	assert.equals(59, velocidad)
+}
+
+test "camion cerealero su velocidad al estar mas deteriorado no da un numero negativo" {
+	camionCerealero.nivelDeterioro(61)
+	const velocidad = camionCerealero.velocidadMaxima()
+	assert.equals(0, velocidad)
+
+}
+
+test "camion de verduras sin cajones va al maximo" {
+	const velocidad = camionVerduras.velocidadMaxima()
+	assert.equals(80, velocidad)
+}
+
+test "camion de verduras con 1 cajones va al maximo" {
+	camionVerduras.transportarCajones(1)
+	const velocidad = camionVerduras.velocidadMaxima()
+	assert.equals(80, velocidad)
+}
+
+test "camion de verduras con 10 baja la velocidad" {
+	camionVerduras.transportarCajones(10)
+	const velocidad = camionVerduras.velocidadMaxima()
+	assert.equals(79, velocidad)
+}
+
+test "camion de verdura con 1 cajon su carga es de 50" {
+	camionVerduras.transportarCajones(1)
+	assert.equals(50, camionVerduras.carga())
+}
