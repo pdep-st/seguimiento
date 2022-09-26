@@ -1,0 +1,30 @@
+@startuml
+class inia <<WKO>> {
+pasear()
+pasear(distancia)
+}
+
+interface Mascota <<interfaz>> {
+pasear(distancia)
+}
+
+class Perro {
+energia
+pasear(distancia)
+}
+
+class Gato {
+energia
+pasear(distancia)
+}
+
+class rocco <<WKO>> {
+energia
+pasear(distancia)
+}
+
+Mascota <|.. Gato
+Mascota <|.. Perro
+Mascota <|.. rocco
+inia --> "*" Mascota : mascotas
+@enduml

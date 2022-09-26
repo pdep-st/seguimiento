@@ -1,0 +1,101 @@
+import clase3.*
+
+describe "Iña" {
+
+	test "arranca sin mascotas" {
+		assert.that(inia.mascotas().isEmpty())
+	}
+
+	test "puede agregar un perro" {
+		const perro = new Perro()
+		inia.agregarMascota(perro)
+		assert.equals(#{ perro }, inia.mascotas())
+	}
+
+	test "no puede agregar la misma mascota dos veces" {
+		const perro = new Perro()
+		inia.agregarMascota(perro)
+		inia.agregarMascota(perro)
+		assert.equals(#{ perro }, inia.mascotas())
+	}
+
+}
+
+describe "Iña pasea a Mini" {
+
+	const mini = new Perro()
+
+	method initialize() {
+		inia.agregarMascota(mini)
+	}
+
+	test "a Mini con distancia default" {
+		inia.pasear()
+		assert.equals(90, mini.energia())
+	}
+
+	test "a Mini 5 kilómetros" {
+		inia.pasear(5)
+		assert.equals(90, mini.energia())
+	}
+
+	test "a Mini con 5 energía" {
+		mini.energia(5)
+		inia.pasear()
+		assert.equals(0, mini.energia())
+	}
+
+}
+
+describe "Iña pasea a Mía" {
+
+	const mia = new Gato()
+
+	method initialize() {
+		inia.agregarMascota(mia)
+	}
+
+	test "a Mía con distancia default" {
+		inia.pasear()
+		assert.equals(90, mia.energia())
+	}
+
+	test "a Mía 5 kilómetros" {
+		inia.pasear(5)
+		assert.equals(75, mia.energia())
+	}
+
+	test "a Mía con 5 energía" {
+		mia.energia(5)
+		inia.pasear()
+		assert.equals(0, mia.energia())
+	}
+
+}
+
+describe "Iña pasea a Rocco" {
+
+	method initialize() {
+		inia.agregarMascota(rocco)
+	}
+
+	test "a Rocco con distancia default" {
+		inia.pasear()
+		assert.equals(80, rocco.energia())
+	}
+
+	test "a Rocco 5 kilómetros" {
+		inia.pasear(5)
+		assert.equals(80, rocco.energia())
+	}
+
+	test "a Rocco con 5 energía" {
+		rocco.energia(5)
+		inia.pasear()
+		assert.equals(0, rocco.energia())
+	}
+
+}
+
+// TDD
+// Test Driven Development   

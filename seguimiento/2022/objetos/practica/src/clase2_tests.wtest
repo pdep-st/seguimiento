@@ -1,4 +1,4 @@
-import cargas.*
+import clase2.*
 
 test "camion cerealero su velocidad es 60 si no esta deteriorado" {
 	const velocidad = camionCerealero.velocidadMaxima()

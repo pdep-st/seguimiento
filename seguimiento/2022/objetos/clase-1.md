@@ -13,7 +13,7 @@
 
 ## Material utilizado
 
-* [Código de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/objetos/practica/clase1.wlk)
+* [Código de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/objetos/practica/src/clase1.wlk)
 
 ## Para hacer después de la clase
 * [Instalar Wollok](https://www.pdep.com.ar/software/wollok)
