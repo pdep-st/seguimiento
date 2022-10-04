@@ -1,0 +1,31 @@
+import clase4.*
+
+const monedero = new Monedero()
+
+const dora = new Persona(nombre = "Dora", monedero = monedero)
+
+test "Dora extrae 10000" {
+	dora.extraer(10000)
+	assert.equals(10000, monedero.plata())
+	assert.equals(90000, cajero.disponible())
+}
+
+test "Dora trata de extraer 110000, termina extrayendo 55000" {
+	assert.equals(100000, cajero.disponible())
+	dora.extraer(110000)
+	assert.equals(55000, monedero.plata())
+	assert.equals(45000, cajero.disponible())
+}
+
+test "Dora trata de extraer dos veces 60000, termina extrayendo 90000" {
+	assert.equals(100000, cajero.disponible())
+	dora.extraer(60000)
+	dora.extraer(60000)
+	assert.equals(90000, monedero.plata())
+	assert.equals(10000, cajero.disponible())
+}
+
+test "Dora no puede extraer 250000" {
+	assert.equals(100000, cajero.disponible())
+	assert.throwsException({ dora.extraer(250000)})
+}
