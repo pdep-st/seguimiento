@@ -1,0 +1,41 @@
+import medico_de_planta.*
+import enfermedad_infecciosa.*
+import enfermedad_autoinmune.*
+import jefe_de_departamento.*
+
+const cameron = new MedicoDePlanta(dosis = 20, celulas = 10000, temperatura = 36)
+const lupusCameron = new EnfermedadAutoinmune(celulasAfectadas = 15000)
+const logan = new MedicoDePlanta(dosis = 50, celulas = 20000, temperatura = 35)
+const malariaLogan = new EnfermedadInfecciosa(celulasAfectadas = 20000)
+
+const house = new JefeDeDepartamento(celulas = 100000, temperatura = 38)
+
+test "Cameron atiende a Logan" {
+	const celulasIniciales = malariaLogan.celulasAfectadas() 
+	logan.contraer(malariaLogan)
+	cameron.atender(logan)
+	assert.equals(celulasIniciales - (logan.dosis() + cameron.dosis()) * 15, malariaLogan.celulasAfectadas())
+}
+
+test "Logan contrae malaria y se enfermó sólo una vez" {
+	assert.equals(0, logan.vecesEnfermado())
+	logan.contraer(malariaLogan)
+	assert.equals(1, logan.vecesEnfermado())
+}
+
+test "House atiende a Cameron usando a Logan" {
+	house.agregarSubordinado(logan)
+	cameron.contraer(lupusCameron)
+	house.atender(cameron)
+	assert.equals(15000 - (cameron.dosis() + logan.dosis()) * 15, lupusCameron.celulasAfectadas())
+}
+
+test "House atiende a Cameron teniendo dos subordinados" {
+	house.agregarSubordinado(logan)
+	house.agregarSubordinado(cameron)
+	cameron.contraer(lupusCameron)
+	assert.equals(15000 - cameron.dosis() * 15, lupusCameron.celulasAfectadas())
+	const celulasDespuesDeAutotratarse = lupusCameron.celulasAfectadas()
+	house.atender(cameron)
+	assert.that(celulasDespuesDeAutotratarse > lupusCameron.celulasAfectadas())
+}

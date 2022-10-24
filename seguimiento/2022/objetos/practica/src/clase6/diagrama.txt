@@ -1,0 +1,80 @@
+'https://www.plantuml.com/plantuml/uml/ZPF1Yjj038RlUWgp9xkGVO0ImeRD7bfOM6XVG9bHmb1x9cWqwI7TTw_6JdQ6EcLD3W7frw_Vd-MdACYIXXvCZp4sRyGnU6mk83ISY54I8nZgaxRXJ8RYYpyG3sW3W0bU68bR6cjaqNR0PDpUyIjPPt0WBw6r8RhOmTcT7RST53N5hH5tngXLJ5cC_BCiRgTQwFAc8_MOftL8E3b-daArrt3R0nb1Yxhd7G3tAa8ZpHWZD9VxMIyttNk3Gjvg-pGHo2uJawl5Zjvwz9BHZ8y3yF-9xtIWdVvEo38XqAcOze6jyqek3n-PZiW_Ih4TnZtTNL_dXVY0XfgNZ_ZgcQK9EL9hq8lJuewkN1Hp57nEZ1OptH5FPQheDK9K-ALMWojx9aFMTV-YXkK1QjIpB5Mln9fphJ9jamJdX-H9Op6Pb27lN8uqSrze-Sthe74XebekCc4wSR39kFpybMUFhubOg5clV_yAcyrIl-KmTHNSFjNLQjCyV7ce3-DhKtzY7yhrdzNgUiqm_PLIEV2wTUUIONuOMNdttNokBT0hhOeU7-S7E5FSECCJUPk6_Yy0
+
+@startuml
+class Persona {
+temperatura
+celulas
+vecesEnfermado
+
+contraer(enfermedad)
+recibirMedicamento(dosis)
+vivir()
+enfermedadesActivas()
+aumentarTemperatura(aumento)
+congelar()
+destruirCelulas(celulasAfectadas)
+}
+
+abstract Medico {
+contraer(enfermedad)
+{abstract} atender(persona)
+}
+
+class MedicoDePlanta {
+dosis
+
+atender(persona)
+}
+
+class JefeDeDepartamento {
+agregarSubordinado(medico)
+atender(persona)
+}
+
+interface Enfermedad {
+atenuarse(cantidadDeCelulas)
+estaCurada()
+afectar(persona)
+esAgresiva(persona)
+}
+
+abstract EnfermedadCelular {
+celulasAfectadas
+
+atenuarse(cantidadDeCelulas)
+estaCurada()
+{abstract} afectar(persona)
+{abstract} esAgresiva(persona)
+}
+
+class EnfermedadAutoinmune {
+recuentoDias
+
+afectar(persona)
+esAgresiva(persona)
+}
+
+class EnfermedadInfecciosa {
+afectar(persona)
+esAgresiva(persona)
+reproducirse()
+}
+
+class laMuerte <<wko>> {
+afectar(persona)
+esAgresiva(persona)
+atenuarse(cantidadDeCelulas)
+estaCurada()
+}
+
+
+Persona --> "*" Enfermedad : enfermedades
+Persona <|-- Medico
+Medico <|-- MedicoDePlanta
+Medico <|-- JefeDeDepartamento
+JefeDeDepartamento --> "*" Medico : subordinados
+EnfermedadCelular <|-- EnfermedadAutoinmune
+EnfermedadCelular <|-- EnfermedadInfecciosa
+Enfermedad <|.. EnfermedadCelular
+Enfermedad <|.. laMuerte
+@enduml

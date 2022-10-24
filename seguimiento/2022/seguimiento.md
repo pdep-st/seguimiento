@@ -36,3 +36,5 @@
 * Clase 2 - [Testing](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/objetos/clase-2.md)
 * Clase 3 - [Listas, Bloques, Interfaz y Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/objetos/clase-3.md)
 * Clase 4 - [Manejo de Errores](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/objetos/clase-4.md)
+* Clase 5 - [Herencia](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/objetos/clase-5.md)
+* Clase 6 - [Clase Abstracta - Redefinición - Super](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/objetos/clase-6.md)
