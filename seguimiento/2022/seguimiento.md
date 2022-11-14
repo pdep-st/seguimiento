@@ -40,3 +40,4 @@
 * Clase 6 - [Clase Abstracta - Redefinición - Super](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/objetos/clase-6.md)
 * Clase 7 - [Herencia vs Composición](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/objetos/clase-7.md)
 * Clase 8 - [Identidad vs Igualdad - Mutabilidad](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/objetos/clase-8.md)
+* Clase 9 - [Simulacro](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/objetos/clase-9.md)
