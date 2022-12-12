@@ -1,1 +1,12 @@
 .vscode
+
+# Wollok
+bin
+.settings
+.classpath
+.project
+.diagrams
+build.properties
+package.json
+META-INF/
+log4j.properties
