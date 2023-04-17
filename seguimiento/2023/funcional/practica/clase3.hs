@@ -27,13 +27,44 @@ esNombreLargo = excedeLargo . genericLength
 (#) g f x = g (f x)
 -- Definir la función (.)
 
-{-
-probabilidadLluvia clima
-    | clima == "Despejado" = 0
-    | clima == "Nublado" = 50
-    | clima == "Relampaguea" = 100
-    | otherwise = 40
+probabilidadLluvia "Despejado" = 0
+probabilidadLluvia "Nublado" = 50
+probabilidadLluvia "Relampaguea" = 100
+probabilidadLluvia _ = 40
 
+signo 0 = 0
+signo numero
+    | numero < 0 = -1
+    | otherwise = 1
+
+-- ganaNombreLargo/2
+-- 1. entre dos nombres, va a ganar (se retorna) el nombre que sea mas largo
+-- 2. entre dos nombres de igual longitud gana el primero
+-- 3. siempre que compita martin, va a ganar (se retorna) martin
+
+ganaNombreLargo "martin" _ = "martin"
+ganaNombreLargo _ "martin" = "martin"
+ganaNombreLargo unNombre otroNombre
+    | length unNombre >= length otroNombre = unNombre
+    | otherwise = otroNombre
+
+--6! = 6*5*4*3*2 = numero
+
+factorial 0 = 1
+factorial unNumero = unNumero * factorial (unNumero - 1)
+
+-- si funcionDeSuma es exactamente la suma, que la utilice con los dos numeros
+-- si funcinoDeSuma no es exactamente la suma, que sume los dos numeros 
+--funcionLoca "+" unNumero otroNumero = (-) unNumero otroNumero
+--funcionLoca "-" unNumero otroNumero = (+) unNumero otroNumero
+-- funcionLoca (+) 1 2  -> -1
+-- funcionLoca (-) 1 2  -> 3
+
+--quienEsMasGrande :: _ -> _ -> String      <- No se puede
+quienEsMasGrande :: String -> String -> String 
+quienEsMasGrande _ _ = "Boca"
+
+{-
 Cuando no es ninguna de las tres sumar un caso
 que sea 20 si la cantidad de letras es menor a 3
 que sea 40 si la cantidad de letras es mayor o igual a 3
