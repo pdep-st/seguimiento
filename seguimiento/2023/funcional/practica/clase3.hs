@@ -39,25 +39,37 @@ que sea 20 si la cantidad de letras es menor a 3
 que sea 40 si la cantidad de letras es mayor o igual a 3
 -}
 
-
--- noMeImportaElPrimero
--- noMeImportaElPrimero :: a -> b -> b
-
--- factorial (5! = 5 * 4!, 0! = 1)
-
 -- dividir: un número por otro,
 -- obteniendo la parte entera y el resto
-
+dividir numero otroNumero = 
+  (numero `div` otroNumero , numero `mod` otroNumero)
 -- esPar usando dividir
 
 -- punto: x, y
 
+punto = (1, (-3))
+
+sumarPuntos unPunto otroPunto = 
+  (fst unPunto + fst otroPunto, snd unPunto + snd otroPunto)
+
 -- nacimiento (año, mes, dia)
+fecha = (1993, 11, 10)
+nacimientoGustavo = (2001, 11, 4)
+
+anio (elAnio, _, _) = elAnio
+mes (_, mes, _) = mes
+dia (_, _, dia) = dia
 
 -- persona: Nombre, Apellido, Edad
+persona = ("Martín", "Gotelli", 29)
 
 -- auto: Marca, Modelo, Año
+auto = ("Fiat", "Cronos", 2018)
+clio = ("Renault", "Clio", 2010)
 
+marca (marca, _, _) = marca
+modelo (_, modelo, _) = modelo
+anioAuto (_, _, anio) = anio
 
 -- cumplirAnios: Crecer un año
 
