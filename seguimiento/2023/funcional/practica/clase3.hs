@@ -12,7 +12,9 @@ import Data.List
 excedeLargo longitud = longitud > 7
 
 -- esNombreLargo:: (String -> Bool)
-esNombreLargo = excedeLargo . genericLength 
+esNombreLargo = excedeLargo . genericLength
+
+-- esNombreLargo nombre = excedeLargo (genericLength nombre)
 
 -- Tipo de la (.) usando esNombreLargo
 -- Recibe dos parámetros (que son funciones que esperan un parámetro)
@@ -93,6 +95,14 @@ dia (_, _, dia) = dia
 
 -- persona: Nombre, Apellido, Edad
 persona = ("Martín", "Gotelli", 29)
+edu = ("Edu", "Montecchia", 27)
+donDiego= ("Don Diego de la Vega", "El Zorro", 105)
+
+eduViejo = (cumplirAnios . cumplirAnios) edu
+
+nombre (nombre, _, _) = nombre
+apellido (_, apellido, _) = apellido
+edad (_, _, edad) = edad
 
 -- auto: Marca, Modelo, Año
 auto = ("Fiat", "Cronos", 2018)
@@ -104,4 +114,14 @@ anioAuto (_, _, anio) = anio
 
 -- cumplirAnios: Crecer un año
 
+cumplirAnios persona = (nombre persona, apellido persona, edad persona + 1)
+
 -- tieneNombreLargo
+
+-- tieneNombreLargo (nombre, _, _) = esNombreLargo nombre
+
+-- tieneNombreLargo persona = esNombreLargo (nombre persona)
+-- tieneNombreLargo persona = (esNombreLargo . nombre) persona
+tieneNombreLargo = esNombreLargo . nombre
+
+-- tieneNombreLargo = excedeLargo . genericLength . nombre
