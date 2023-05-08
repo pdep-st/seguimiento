@@ -12,6 +12,7 @@
 * Clase 3 - [Pattern Matching y Tuplas](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2023/funcional/clase-3.md)
 * Clase 4 - [Aplicación Parcial y Listas](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2023/funcional/clase-4.md)
 * Clase 5 - [Data y Orden Superior](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2023/funcional/clase-5.md)
+* Clase 6 - [Constructores de listas y Definiciones locales](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2023/funcional/clase-6.md)
 
 ## Paradigma Lógico
 
