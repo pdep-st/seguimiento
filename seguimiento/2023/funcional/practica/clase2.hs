@@ -11,7 +11,7 @@ largoMaximo = 25
 sirve:: Int -> Bool
 sirve longitud = longitud > largoMaximo
 
-
+--
 -- sirveAlargandoUnPoco/1
 -- sirveAlargandoUnPoco longitud = 
 --    sirve (alargarUnPoco longitud)
