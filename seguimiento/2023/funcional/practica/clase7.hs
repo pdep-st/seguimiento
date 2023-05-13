@@ -5,12 +5,6 @@ import Text.Show.Functions
 -- reducir: para permitir la definición de
 -- funciones recursivas
 
-reducir:: (b -> a -> b) -> b -> [a] -> b
-reducir _ casoBase [] = casoBase
-
-reducir funcion casoBase (x:xs) =
-    funcion (reducir funcion casoBase xs) x
-
 -- sumatoria/1
 sumatoria [] = 0
 sumatoria (cabeza:cola) = cabeza + sumatoria cola
