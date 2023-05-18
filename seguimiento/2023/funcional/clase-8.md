@@ -10,9 +10,9 @@
 
 ## Material utilizado
 
-* [Video de clase](https://youtu.be/kHie9nRAAcc)
-* [Presentación clase](https://docs.google.com/presentation/d/1e1VZSdmidvSK4wfqjP8fS4pTTzh6aeNtHRnP5aAtd38)
-* [Código de clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2022/funcional/practica/clase8.hs)
+* Video de clase
+* [Presentación clase](https://docs.google.com/presentation/d/14aM8h8SiZ-O9tIfbOTKLj_bOy7q9FIiZ85rt-2Rm_YI/)
+* [Código de clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2023/funcional/practica/clase8.hs)
 
 ## Para hacer después de la clase
 
