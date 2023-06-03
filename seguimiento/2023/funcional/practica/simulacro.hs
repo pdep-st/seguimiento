@@ -13,4 +13,10 @@ aplicaleEl2 f = f 2
 
 miPatron [x : y : ys] = True
 
+
+suma (x, y) = x + y
+
+-- h x y z = x + y * z
+h = (\x -> (\y -> (\z -> x + y * z)))
+
 -- tomar/2
