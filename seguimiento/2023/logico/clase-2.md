@@ -5,7 +5,7 @@
 * Repaso general
 * `not/1` - Para verificar si no se cumple una consulta.
   * Y aparecen los problemas con la inversibilidad.
-* `forall/2` Para verificar todos los individuos que cumplen la primer consulta además cumplan la segunda
+* `forall/2` Para verificar que todos los individuos que cumplen la primer consulta además cumplan la segunda
 * Análisis de inversibilidad
 
 ## Material utilizado
