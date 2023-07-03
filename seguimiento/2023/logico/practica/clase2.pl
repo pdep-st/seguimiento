@@ -32,6 +32,7 @@ materia(algoritmos, 1).
 materia(analisis1, 1).
 materia(pdep, 2).
 materia(sintaxis, 2).
+materia(proba, 2).
 
 /*
 primero(algoritmos).
@@ -65,7 +66,10 @@ nota(nicolas, pdep, 10).
 nota(nicolas, proba, 7).
 nota(nicolas, sintaxis, 8).
 nota(malena, pdep, 6).
+nota(malena, analisis1, 6).
 nota(raul, pdep, 9).
+nota(raul, analisis1, 9).
+nota(raul, algoritmos, 7).
 nota(messi, fulbo, 10).
 
 rindio(Alumno):- nota(Alumno, _, _).
@@ -84,3 +88,13 @@ estaAlPrincipio(Alumno):-
         1. materias de un anio?
         2. aprobo materia?
 */
+
+anio(Anio):- materia(_, Anio).
+
+aproboAnio(Alumno, Anio):-
+   alumno(Alumno),
+   anio(Anio),
+   forall(
+      materia(Materia, Anio),
+      aprobo(Alumno, Materia)
+   ).
