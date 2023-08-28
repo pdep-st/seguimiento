@@ -6,6 +6,7 @@
   * Listas
 * Recursividad
 * Pattern Matching
+* Combinatoria
 
 ## Material utilizado
 
@@ -16,3 +17,4 @@
 ## Para hacer después de la clase
 
 * [Apunte - Recursividad](https://docs.google.com/document/d/16SMBS6i_wjkdcVztpUDb-WTfASnCXQjld7VyKLUpC8A)
+* [Apunte - Combinatoria](https://docs.google.com/document/d/1tYWw-wiPWCysq2RbeEfhoe8D1sLusDuHMD6YLNHUmIo)
