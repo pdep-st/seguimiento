@@ -8,7 +8,7 @@
 ## Material utilizado
 
 * [Presentación de la Clase](https://docs.google.com/presentation/d/1BdDJRRhueOcoT0_Mk9G-YYfIkiL70m0GIYKZvW2ZcOI)
-* Video de Clase
+* [Video de Clase](https://youtu.be/5nlRZqxP5vs)
 * [Código de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2023/objetos/practica/src/clase2.wlk)
 * [Tests de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2023/objetos/practica/src/clase2_tests.wtest)
 

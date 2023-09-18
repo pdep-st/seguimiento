@@ -1,0 +1,57 @@
+import clase2.*
+
+/*
+ * 1. velocidad máxima inicial -> v == 60
+ * 2. velocidad máxima con deterioro < 60 -> v > 0
+ * 3. velocidad máxima con deterioro >= 60 -> v == 0
+ */
+ 
+test "la velocidad máxima es 60 para el camión cerealero inicialmente" {
+	assert.equals(60, camionCerealero.velocidadMaxima())
+}
+
+test "la velocidad máxima es 33 para el camión cerealero con deterioro igual a 27" {
+	camionCerealero.nivelDeterioro(27)
+	assert.equals(33, camionCerealero.velocidadMaxima())
+}
+
+test "la velocidad máxima queda en 0 para el camión cerealero con deterioro igual a 71" {
+	camionCerealero.nivelDeterioro(71)
+	assert.equals(0, camionCerealero.velocidadMaxima())
+}
+
+/*
+ * 1. velocidad máxima inicial (sin carga) -> v == 80
+ * 2. velocidad máxima con carga > 0, carga < 80 * 500 -> v < 80, v > 0
+ * 3. velocidad máxima con carga >= 80 * 500 -> v == 0
+ * 4. carga con 0 cajones (inicial) -> c == 0
+ * 5. carga con >0 cajones -> c > 0 
+ */
+ test "la carga del camión de verduras con 0 cajones, es 0" {
+ 	assert.equals(0, camionVerduras.carga())
+ }
+ 
+ test "la carga del camión de verduras con 11 cajones, es 550" {
+	camionVerduras.cajones(11)
+ 	assert.equals(550, camionVerduras.carga())
+ }
+ 
+ test "la velocidad máxima es 80 para el camión de verduras sin carga" {
+ 	assert.equals(80, camionVerduras.velocidadMaxima())
+ }
+ 
+ test "la velocidad máxima es 78 para el camión de verduras con 20 cajones" {
+ 	camionVerduras.cajones(20)
+ 	assert.equals(78, camionVerduras.velocidadMaxima())
+ }
+ 
+ test "la velocidad máxima es 78.2 para el camión de verduras con 18 cajones" {
+ 	camionVerduras.cajones(18)
+ 	assert.equals(78.2, camionVerduras.velocidadMaxima())
+ }
+ 
+ test "la velocidad máxima queda en 0 para el camión de verduras con 20000 cajones" {
+ 	camionVerduras.cajones(20000)
+ 	assert.equals(0, camionVerduras.velocidadMaxima())
+ }
+ 
