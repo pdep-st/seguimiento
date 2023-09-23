@@ -64,14 +64,7 @@ class Perro {
 
 }
 
-/*
- * Iña se dio cuenta que era un negocio rentable pasear mascotas
- * por lo que empezó a pasear mascotas de sus vecinos.
- * Se dio cuenta que todos los gatos se comportaban igual, mientras que
- * los perros eran todos iguales excepto los golden, que gastan el doble
- * que los otros perros.
- * Modelar este nuevo requerimiento.
- */
+GIT
 object rocco {
 
 	var property energia = 100

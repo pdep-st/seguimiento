@@ -1,0 +1,29 @@
+import clase3.*
+
+describe "Iña pasea" {
+	test "a Mini y pierde 10 de energía" {
+		mini.energia(100)
+		inia.pasear()
+		assert.equals(90, mini.energia())
+	}
+	
+	test "a Mini con 5 de energía y queda en 0" {
+		mini.energia(5)
+		inia.pasear()
+		assert.equals(0, mini.energia())
+	}
+	
+	test "a Mia con 100 de energía por 2 kms y pierde 10 de energía" {
+		mia.energia(100)
+		inia.pasear()
+		assert.equals(90, mia.energia())
+	}
+}
+
+describe "Mini"{
+	test "pasea y pierde 10 de energía" {
+		mini.energia(100)
+		mini.pasear()
+		assert.equals(90, mini.energia())
+	}	
+}
