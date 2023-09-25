@@ -6,12 +6,10 @@
  */
  
  object inia {
- 	var property perro = mini
- 	var property gato = mia
+ 	const mascotas = [mini, mia]
  	
  	method pasear(kms) {
- 		perro.pasear()
- 		gato.pasear(kms)
+ 		mascotas.forEach{mascota => mascota.pasear(kms)}
  	}
  	
  	method pasear() {
@@ -22,7 +20,7 @@
  object mini {
  	var property energia = 0
  	
- 	method pasear() {
+ 	method pasear(kms) {
  		self.disminuirEnergia(10)
  	}
  	
