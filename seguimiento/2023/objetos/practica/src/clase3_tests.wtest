@@ -21,9 +21,9 @@ describe "Iña pasea" {
 }
 
 describe "Mini"{
-	test "pasea y pierde 10 de energía" {
+	test "pasea 10000 kms y pierde 10 de energía" {
 		mini.energia(100)
-		mini.pasear()
+		mini.pasear(10000)
 		assert.equals(90, mini.energia())
 	}	
 }
