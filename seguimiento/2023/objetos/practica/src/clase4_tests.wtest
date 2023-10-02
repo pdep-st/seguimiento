@@ -1,6 +1,26 @@
+import clase4.*
 
-test "testX" {
+describe "Dora intenta retirar" {
+	
+	const monedero = new Monedero()
+	const dora = new Persona(nombre = "Dora", monedero = monedero)	
 
-	assert.that(true)
-
+	test "10000 del cajero y lo logra" {
+		assert.equals(100000, cajero.disponible())
+		dora.retirar(10000)
+		assert.equals(10000, dora.disponible())
+		assert.equals(90000, cajero.disponible())
+	}
+	
+	test "250000 del cajero y no es posible" {
+		assert.equals(100000, cajero.disponible())
+		assert.throwsException({dora.retirar(250000)})
+	}
+	
+	test "120000 del cajero y retira 60000" {
+		assert.equals(100000, cajero.disponible())
+		dora.retirar(120000)
+		assert.equals(60000, dora.disponible())
+		assert.equals(40000, cajero.disponible())
+	}
 }
