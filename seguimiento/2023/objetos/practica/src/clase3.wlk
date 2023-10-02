@@ -17,7 +17,9 @@
  	}
  }
  
- object mini {
+ const mini = new Perro()
+ 
+ class Perro {
  	var property energia = 0
  	
  	method pasear(kms) {
@@ -27,7 +29,18 @@
  	method disminuirEnergia(cantidad) {
  		energia = (energia - cantidad).max(0)
  	}
-
+ }
+ 
+ class Golden {
+ 	var property energia = 0
+ 	
+ 	method pasear(kms) {
+ 		self.disminuirEnergia(20)
+ 	}
+ 	
+ 	method disminuirEnergia(cantidad) {
+ 		energia = (energia - cantidad).max(0)
+ 	}
  }
  
  // TDD: Test Driven Development
@@ -40,7 +53,9 @@
  * Modelar este nuevo requerimiento.
  */
  
- object mia {
+const mia = new Gato()
+ 
+class Gato {
  	var property energia = 0
  	
  	method pasear(kms) {
@@ -51,12 +66,6 @@
  		energia = (energia - cantidad).max(0)
  	}
  }
- 
- 
- 
- 
- 
- 
  
  
  /*
