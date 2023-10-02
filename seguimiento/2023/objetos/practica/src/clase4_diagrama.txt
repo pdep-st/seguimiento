@@ -1,0 +1,38 @@
+@startuml
+
+class inia <<WKO>>{
+mascotas
+pasear()
+pasear(kms)
+}
+
+class Perro {
+energia
+pasear(kms)
+disminuirEnergia()
+}
+
+class Gato {
+energia
+pasear(kms)
+disminuirEnergia()
+}
+
+class Golden {
+energia
+pasear(kms)
+disminuirEnergia()
+}
+
+interface Mascota <<Interfaz>>{
+pasear(kms)
+}
+
+inia -> "*" Mascota
+Mascota <|.. Perro
+Mascota <|.. Gato
+Mascota <|.. Golden
+
+
+hide inia circle
+@enduml

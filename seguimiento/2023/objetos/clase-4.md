@@ -12,9 +12,10 @@
 ## Material utilizado
 
 * [Presentación de la Clase](https://docs.google.com/presentation/d/1jpniCvq2Teq6pWtwZLOg_C0hNLeOJFe7MZoNIffEFNo)
-* Video de Clase
+* [Video de Clase](https://youtu.be/x7R2PmYHXw8)
 * [Código de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2023/objetos/practica/src/clase4.wlk)
 * [Tests de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2023/objetos/practica/src/clase4_tests.wtest)
+* [Diagrama de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2023/objetos/practica/src/clase4_diagrama.txt)
 
 ## Para hacer después de la clase
 
