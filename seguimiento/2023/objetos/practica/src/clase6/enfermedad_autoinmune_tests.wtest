@@ -1,0 +1,7 @@
+import enfermedad_autoinmune.*
+
+test "lupus con 1000 celulas se atenúa en 500, y queda en 500" {
+	const lupus = new EnfermedadAutoinmune()
+	lupus.atenuar(500)
+	assert.equals(500, lupus.celulasAmenazadas())
+}

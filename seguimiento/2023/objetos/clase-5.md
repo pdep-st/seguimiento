@@ -9,6 +9,7 @@
 
 * [Ejercicio](https://docs.google.com/document/d/1Leq5SpEdGhDdmOlFURd0Ko6ib3lDhjeNNydsuhWCqCs/)
 * [Código de Clase](https://github.com/pdep-st/seguimiento/tree/main/seguimiento/2023/objetos/practica/src/clase5.wlk)
+* [Diagrama de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2023/objetos/practica/src/clase5_diagrama.txt)
 
 ## Para hacer después de la clase
 

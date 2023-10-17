@@ -1,0 +1,15 @@
+import enfermedad_infecciosa.*
+
+test "malaria con 1000 celulas se atenúa en 100, y queda en 900" {
+	const malaria = new EnfermedadInfecciosa()
+	malaria.atenuar(100)
+	assert.equals(900, malaria.celulasAmenazadas())
+}
+
+test "otitis con 1500 celulas se reproduce dos veces y queda en 6000" {
+	const otitis = new EnfermedadInfecciosa(celulasAmenazadas = 1500)
+	otitis.reproducirse()
+	assert.equals(3000, otitis.celulasAmenazadas())
+	otitis.reproducirse()
+	assert.equals(6000, otitis.celulasAmenazadas())
+}

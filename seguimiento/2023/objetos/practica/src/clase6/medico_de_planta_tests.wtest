@@ -1,0 +1,21 @@
+import medico_de_planta.*
+import paciente.*
+import enfermedad_infecciosa.*
+
+const cameron = new MedicoDePlanta(dosis = 10)
+const malaria = new EnfermedadInfecciosa()
+
+test "Cameron, con 10 de dosis, atiende a Logan con malaria de 1000 celulas y queda atenuada en 850 celulas" {
+	const logan = new Paciente()
+	logan.contraerEnfermedad(malaria)
+	
+	cameron.atender(logan)
+	
+	assert.equals(850, malaria.celulasAmenazadas())
+}
+
+test "Cameron, con 10 de dosis, contrae malaria (con 1000 celulas) y se cura a sí mismo y queda atenuada en 850" {
+	cameron.contraerEnfermedad(malaria)
+	
+	assert.equals(850, malaria.celulasAmenazadas())
+}

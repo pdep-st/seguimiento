@@ -1,0 +1,71 @@
+@startuml
+
+class Paciente {
+enfermedades
+temperatura
+celulas
+contraerEnfermedad(enfermedad)
+vivir()
+curar(dosis)
+}
+
+abstract class EnfermedadCelular {
+celulasAmenazadas
+{abstract} afectar(paciente)
+atenuar(celulas)
+estaCurada()
+}
+
+class EnfermedadInfecciosa {
+afectar(paciente)
+esAgresiva(paciente)
+reproducirse()
+}
+
+class EnfermedadAutoinmune {
+diasAfectando
+afectar(paciente)
+esAgresiva(paciente)
+}
+
+class muerte <<WKO>> {
+afectar(paciente)
+esAgresiva(paciente)
+atenuar(celulas)
+estaCurada()
+}
+
+interface Enfermedad {
+afectar(paciente)
+atenuar(celulas)
+estaCurada()
+}
+
+abstract class Medico {
+contraerEnfermedad(enfermedad)
+{abstract} atender(paciente)
+}
+
+class MedicoDePlanta {
+dosis
+atender(paciente)
+}
+
+class JefeDeDepartamento {
+subordinados
+atender(paciente)
+}
+
+hide muerte circle
+
+Paciente -> "*" Enfermedad
+EnfermedadCelular <|-- EnfermedadInfecciosa
+EnfermedadCelular <|-- EnfermedadAutoinmune
+Enfermedad <|.. EnfermedadCelular
+Enfermedad <|... muerte
+Paciente <|-- Medico
+Medico <|-- JefeDeDepartamento
+Medico <|-- MedicoDePlanta
+Medico "*" <-- JefeDeDepartamento
+
+@enduml

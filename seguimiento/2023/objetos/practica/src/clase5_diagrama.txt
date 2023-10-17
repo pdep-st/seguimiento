@@ -1,0 +1,35 @@
+@startuml
+
+class Paciente {
+enfermedades
+temperatura
+celulas
+contraerEnfermedad(enfermedad)
+vivir()
+curar(dosis)
+}
+
+abstract class Enfermedad {
+celulasAmenazadas
+{abstract} afectar(paciente)
+tratar(dosis)
+estaCurada()
+}
+
+class EnfermedadInfecciosa {
+afectar(paciente)
+esAgresiva(paciente)
+reproducirse()
+}
+
+class EnfermedadAutoinmune {
+diasAfectando
+afectar(paciente)
+esAgresiva(paciente)
+}
+
+Paciente -> "*" Enfermedad
+Enfermedad <|-- EnfermedadInfecciosa
+Enfermedad <|-- EnfermedadAutoinmune
+
+@enduml

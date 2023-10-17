@@ -10,6 +10,12 @@ class Enfermedad {
 	method afectar(paciente)
 }
 
+class Alopecia inherits Enfermedad {
+	override method afectar(paciente) {
+		// No hace nada, ya está pelado
+	}
+}
+
 class EnfermedadInfecciosa inherits Enfermedad {
 	
 	override method afectar(paciente) {
