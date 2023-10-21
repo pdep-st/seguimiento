@@ -76,3 +76,12 @@ class Gato {
  * que los otros perros.
  * Modelar este nuevo requerimiento.
  */
+ 
+ 
+ class Programa {
+ 	const property diaEmitido
+}
+
+object noticiero inherits Programa(diaEmitido = "lunes") {
+	
+}
