@@ -11,7 +11,7 @@
 ## Material utilizado
 
 * [Presentación de la Clase](https://docs.google.com/presentation/d/11oYXtovrPwcvsrN9rAyLKwWf51DQqYn-LVNhfnCPyzU)
-* Video de Clase
+* [Video de Clase](https://youtu.be/98By-JBZdkI)
 * [Ejercicio Method Lookup](https://docs.google.com/document/d/1AbBK9mD8k79AxywClB6jOMo3RHqaBWhwKn9r0UPWM0E)
 * [Ejercicio](https://docs.google.com/document/d/1_SjhYafWzoMbXVYeRYEg8ajdnGGrriq2oq1JFLd7yiw/)
 * [Código de Clase](https://github.com/pdep-st/seguimiento/tree/main/seguimiento/2023/objetos/practica/src/clase7.wlk)
