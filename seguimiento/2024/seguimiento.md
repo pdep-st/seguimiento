@@ -7,7 +7,8 @@
 
 ## Paradigma Funcional
 
-* Clase 1 - TBD
+* Clase 1 - [Introducción](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2024/intro.md) e [Introducción a Funcional](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2024/funcional/clase-1.md)
+* Clase 2 - [Composición, Guardas y Tipos](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2024/funcional/clase-2.md)
 
 ## Paradigma Lógico
 

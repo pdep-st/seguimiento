@@ -22,14 +22,33 @@ doble unNumero = unNumero * 2
 --tresVecesDoble unNumero = doble (doble (doble unNumero))
 tresVecesDoble = doble . doble . doble
 
---esPar = even
+esPar = even
 
+--otherwise = True
 
 -- signo/1
+signo numero
+    | numero < 0 = -1
+    | numero > 0 = 1
+    | otherwise = 0
 
+{- 
+if numero < 0:
+    return -1
+elseif numero > 0:
+    return 1
+else:
+    return 0
+-}
 
--- esPar/1
+-- divisible3/1
+divisible3 numero = not (numero `mod` 3 /= 0)
 
+fLoca x y
+    | x > 0 = y < 0
+    | otherwise = y > 0
+
+fLoca' x y = (x > 0 && y < 0) || (y > 0) -- No es correcto, Martín se equivocó
 
 -- probabilidadLluvia/1 (clima)
 --   "Despejado"      0
@@ -37,6 +56,11 @@ tresVecesDoble = doble . doble . doble
 --   "Relampaguea"    100
 --   cualquierOtro    40
 
+probabilidadLluvia clima
+    | clima == "Despejado" = 0
+    | clima == "Nublado" = 50
+    | clima == "Relampaguea" = 100
+    | otherwise = 40
 
 
 
@@ -46,5 +70,12 @@ tresVecesDoble = doble . doble . doble
 -- "Miércoles" "Ahí nomás"
 -- "Viernes" 'X'
 
+{-
+buenDia dia
+    | dia == "Lunes" = False
+    | dia == "Martes" = 0
+    | dia == "Miércoles" = "Ahí nomás"
+    | dia == "Viernes" = 'X'
+-}
 
 -- esMayorA10DespuesDeIncrementar/1
