@@ -1,15 +1,39 @@
 import Text.Show.Functions
+import Data.List
 
-
+--maximoDeTres :: Int -> Int
+maximoDeTres numero = max numero 3
 --noMeImportaElPrimero
+
+--Quiero una funcion que cuando recibe un numero par, me devuelva el doble. 
+-- Si no, me devuelve el mismo numero
+dobleCuandoEsPar numero
+    | even numero = numero * 2
+    | otherwise = numero
+    
 
 -- esNombreLargo: un nombre es largo cuando excede
 -- los 7 caracteres
+esMayorASiete numero = numero > 7
+cantidadDeCaracteres nombre = genericLength nombre
 
+--esNombreLargo' nombre = esMayorASiete (cantidadDeCaracteres nombre)
+
+esNombreLargo = esMayorASiete . cantidadDeCaracteres
+esNombreLargo2 = esMayorASiete # cantidadDeCaracteres
+
+
+-- Definir la función (#)
+
+(#) g f x = g ( f x )
+
+(#):: (b -> c) -> (a -> b) -> a -> c
+--(#):: (b -> c) -> (a -> b) -> (a -> c)
 
 -- Tipo de la (.)
 
--- Definir la función (.)
+
+
 
 
 {-
