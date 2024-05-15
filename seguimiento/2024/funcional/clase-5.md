@@ -5,7 +5,6 @@
 * Repaso de conceptos
   * Aplicación Parcial
   * Listas
-* Orden Superior
 * Data
 
 ## Material utilizado
@@ -16,4 +15,3 @@
 ## Para hacer después de la clase
 
 * [Repaso - Leer Apunte Modelado de Información (Data)](https://docs.google.com/document/d/11C2UAbP70dP7sTID-ZxJm_a-5ypKxQUEuZr6GVk5yFI/edit#heading=h.x2xuqlkw85oe)
-* [Repaso - Leer Apunte Orden Superior](https://docs.google.com/document/d/1Rzsp5A46R_WdC-NJ6_SKrUrtZ6LmR5A52BazE9XPLIc/edit?usp=sharing)
