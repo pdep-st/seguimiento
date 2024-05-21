@@ -18,7 +18,7 @@ tieneUnSoloElemento _ = False
 
 --estaOrdenada
 
--- longitud
+-- longitud/1
 longitud [] = 0
 longitud (_:xs) = 1 + longitud xs
 
