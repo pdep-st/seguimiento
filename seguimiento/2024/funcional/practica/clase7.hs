@@ -4,18 +4,25 @@ import Text.Show.Functions
 -- funciones recursivas
 
 -- sumatoria/1
-sumatoria = reducirR (+) 0
+sumatoria :: Num a => [a] -> a
+sumatoria = foldr (+) 0
 
 -- productoria/1
-productoria = reducirR (*) 1
+productoria :: Num a => [a] -> a
+productoria = foldr (*) 1
 
-concatenacion = reducirR (++) ""
-
+concatenacion :: [String] -> String
+concatenacion = foldr (++) ""
+-- a ++ []
 -- longitud/1
-longitud = reducirR (\_ acumulador -> 1 + acumulador) 0
+longitud:: [a] -> Int
+longitud = foldr (\_ acumulador -> 1 + acumulador) 0
 
 reducirR _ semilla [] = semilla
-reducirR f semilla (x:xs) = f x (reducirR f semilla xs)
+reducirR f semilla (x:xs) = f x (reducirR f semilla xs) 
+
+reducirL _ semilla [] = semilla
+reducirL f semilla (x:xs) = f (reducirL f semilla xs) x
 -- (+) 8 ((+) 4 0))
 -- (+) 8 4
 --    12
@@ -44,9 +51,14 @@ semilla = 0
 
 
 
-
 -- maximum/minimum??
 
+maximo (x:xs) = foldl max x xs
+--maximo' (x:xs) = foldl1 max xs
+
+minimo (x:xs) = foldl min x xs
+
+sumatoriaSinListaVacia (x:xs) = foldl (+) x xs
 
 -- restatoria??
 
