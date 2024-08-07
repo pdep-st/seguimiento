@@ -62,16 +62,38 @@ practica(pichot, rugby(mariscal, 1)).
 practica(pablito, rugby(wing, 0)).
 practica(falsoPhelps, rugby(nadador, 34)).
 
+% polo: handicap
+practica(cambiasso, polo(10)).
+
+
 % Quiénes son nadadores
+nadador(Deportista) :- practica(Deportista, natacion(_,_,_)).
 
 % Medallas obtenidas
+medallasObtenidas(Deportista, Medallas) :- 
+    practica(Deportista, Deporte),
+    medallasDeporte(Deporte, Medallas).
+
+medallasDeporte(natacion(_, _, Medallas), Medallas).
+medallasDeporte(futbol(Medallas, _, _), Medallas).
+medallasDeporte(rugby(_, Medallas), Medallas).
+
 
 
 % ¿Quién tiene más medallas que el resto?
+masMedallas(Deportista) :- 
+    medallasObtenidas(Deportista, Medallas),
+    forall(
+        medallasObtenidas(_, OtrasMedallas),
+        Medallas >= OtrasMedallas
+    ).
 
 
 % ¿Quién no tiene aún medallas?
-
+noTieneMedallas(Deportista) :- medallasObtenidas(Deportista, 0).
+noTieneMedallas(Deportista) :- 
+    practica(Deportista,_),
+    not(medallasObtenidas(Deportista, _)).
 
 /* 
 Buen deportista
@@ -86,3 +108,20 @@ en el caso del rugby, si son wings o pilares
     y es bueno si tiene un handicap mayor a 6
     no tiene medallas
 */
+
+buenDeportista(Deportista) :-
+    practica(Deportista, Deporte),
+    buenDeporte(Deporte).
+
+buenDeporte(natacion(_, Metros, _)) :-
+    Metros > 1000.
+
+buenDeporte(natacion(crawl, _, _)).
+
+buenDeporte(futbol(_, Goles, Expulsiones)) :-
+    Diferencia is Goles - Expulsiones,
+    Diferencia > 5.
+
+
+buenDeporte(rugby(wing,_)).
+buenDeporte(rugby(pilar,_)).
