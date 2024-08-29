@@ -1,3 +1,68 @@
+progenitorDe(homero, bart).
+progenitorDe(homero, maggie).
+progenitorDe(homero, lisa).
+progenitorDe(marge, bart).
+progenitorDe(marge, maggie).
+progenitorDe(marge, lisa).
+
+progenitorDe(abraham, homero).
+progenitorDe(abraham, herbert).
+progenitorDe(mona, homero).
+
+progenitorDe(clancy, marge).
+progenitorDe(clancy, patty).
+progenitorDe(clancy, selma).
+
+progenitorDe(jeryl, mona).
+
+progenitorDe(jacqueline, marge).
+progenitorDe(jacqueline, patty).
+progenitorDe(jacqueline, selma).
+
+progenitorDe(selma, ling).
+
+
+tieneHermano(Persona):-
+    progenitorDe(Progenitor, Persona),
+    progenitorDe(Progenitor, Otro),
+    Persona \= Otro.
+
+susHijos(Progenitor, Hijos):-
+    progenitorDe(Progenitor, _),
+    findall(
+        Hijo,
+        progenitorDe(Progenitor, Hijo),
+        Hijos
+    ).
+
+personaje(Personaje):-
+    progenitorDe(Personaje, _).
+
+personaje(Personaje):-
+    progenitorDe(_, Personaje).
+
+
+personajes(Personajes):-
+    findall(
+        Personaje,
+        personaje(Personaje),
+        Personajes
+    ).
+
+hermanan([Personaje | Personajes], [Personaje | ConHermanos], SinHermanos):-
+    tieneHermano(Personaje),
+    hermanan(Personajes, ConHermanos, SinHermanos).
+
+hermanan([Personaje | Personajes], ConHermanos, [Personaje | SinHermanos]):-
+    personaje(Personaje),
+    not(tieneHermano(Personaje)),
+    hermanan(Personajes, ConHermanos, SinHermanos).
+
+hermanan([], [], []).
+
+
+%% Simulacro
+
 protagonista(amigazo).
 protagonista(zulemaLogato).
 protagonista(hellMusic).
@@ -86,18 +151,6 @@ carismaTalento(hablar(ceceoso), Carisma):-
     carismaTalento(hablar(noCeceoso), CarismaBase),
     Carisma is CarismaBase + 25.
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 5.
 El carisma no sirve de nada si no tenés fama, la fama es el valor que se obtiene de ser entrevistado por Anabela.
@@ -112,7 +165,7 @@ fama(Protagonista, Fama):-
         FamaEntrevista,
         famaEntrevista(Protagonista, FamaEntrevista),
         FamaEntrevistas
-    )
+    ),
     sumlist(FamaEntrevistas, Fama).
 
 famaEntrevista(Protagonista, FamaEntrevista):-
@@ -159,3 +212,5 @@ carismaExtraSegun(Protagonista, Talento, 0):-
 carismaExtraSegun(Protagonista, Talento, CarismaExtra):-
     not(talento(Protagonista, Talento)),
     carismaTalento(Talento, CarismaExtra).
+
+

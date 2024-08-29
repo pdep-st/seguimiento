@@ -119,3 +119,8 @@ Combinacion2' = []
 
 Combinacion3 = 
 */
+
+tieneHermano(Persona):-
+    progenitorDe(Progenitor, Persona),
+    progenitorDe(Progenitor, Hermano),
+    Persona \= Hermano.
