@@ -214,3 +214,27 @@ carismaExtraSegun(Protagonista, Talento, CarismaExtra):-
     carismaTalento(Talento, CarismaExtra).
 
 
+/*
+7.
+Hay protagonistas que tienen bronca con otro, y hay protagonistas que se perciben amigos de otros. 
+Dados dos protagonistas, se pide saber si el primero se la pudre al segundo. Esto se da cuando el primero 
+tiene bronca con el segundo, o cuando el primero tiene un amigo que se la pudre al segundo.
+*/
+
+amigo(zulemaLogato, inia).
+amigo(hellMusic, martin).
+amigo(amigazo, cappe).
+amigo(amigazo, edu).
+amigo(inia, martin).
+amigo(martin, ogiCuenco).
+
+bronca(samid, viale).
+bronca(martin, amigazo).
+bronca(ogiCuenco, mirtaLagrande).
+
+seLaPudre(Agresor, Victima):-
+    bronca(Agresor, Victima).
+
+seLaPudre(Agresor, Victima):-
+    amigo(Agresor, Amigo),
+    seLaPudre(Amigo, Victima).
