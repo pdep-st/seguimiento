@@ -1,0 +1,105 @@
+import clase2.*
+
+object asserter {
+    method testearVelocidad(cantidadCajones, velocidadEsperada) {
+        camionVerduras.cantidadCajones(cantidadCajones)
+        assert.equals(velocidadEsperada, camionVerduras.velocidadMaxima())
+    }
+}
+
+describe "camionVerduras" {
+    test "con 0 cajones, la carga es 0" {
+        assert.equals(0, camionVerduras.carga())
+    }
+
+    test "con 100 cajones, la carga es 5000" {
+        // 1. Armar el contexto
+        camionVerduras.cantidadCajones(100)
+        // 2. Ejecutar el escenario
+        const resultado = camionVerduras.carga()
+        // 3. Validar el resultado
+        assert.equals(5000, resultado)
+    }
+
+    test "con -10 cajones, la carga es 0" {
+        camionVerduras.cantidadCajones(-10)
+        assert.equals(0, camionVerduras.carga())
+    }
+
+    test "con 0 cajones, la velocidad máxima es 80" {
+        assert.equals(80, camionVerduras.velocidadMaxima())
+    }
+
+    test "con 100 cajones, la velocidad máxima es 70" {
+        //camionVerduras.cantidadCajones(100)
+        //assert.equals(70, camionVerduras.velocidadMaxima())
+        asserter.testearVelocidad(100, 70)
+    }
+
+    test "con 98 cajones, la velocidad máxima es 70,2" {
+        camionVerduras.cantidadCajones(98)
+        assert.equals(70.2, camionVerduras.velocidadMaxima())
+    }
+
+    test "con -10 cajones, la velocidad máxima es 80" {
+        camionVerduras.cantidadCajones(-10)
+        assert.equals(80, camionVerduras.velocidadMaxima())
+    }
+
+    test "con 10000 cajones, la velocidad máxima es 0" {
+        camionVerduras.cantidadCajones(10000)
+        assert.equals(0, camionVerduras.velocidadMaxima())
+    }
+}
+
+
+describe "camionScanion" {
+    test "con densidad igual a 1, la carga es 5000" {
+        assert.equals(5000, camionScanion.carga())
+    }
+
+    test "con densidad igual a 0, la carga es 0" {
+        camionScanion.densidadCombustible(0)
+        assert.equals(0, camionScanion.carga())
+    }
+
+    test "con densidad -1, la carga es 0" {
+        camionScanion.densidadCombustible(-1)
+        assert.equals(0, camionScanion.carga())
+    }
+
+    test "la velocidad máxima es siempre 140" {
+        assert.equals(140, camionScanion.velocidadMaxima())
+    }
+}
+
+
+describe "camionCerealero" {
+    test "inicialmente, la carga es 0" {
+        assert.equals(0, camionCerealero.carga())
+    }
+    
+    test "con carga 80" {
+        camionCerealero.carga(80)
+        assert.equals(80, camionCerealero.carga())
+    }
+
+    test "con 0 deterioro, la velocidad máxima es 60" {
+        assert.equals(60, camionCerealero.velocidadMaxima())
+    }
+
+    test "con 10 de deterioro, la velocidad máxima es 50" {
+        camionCerealero.nivelDeterioro(10)
+        assert.equals(50, camionCerealero.velocidadMaxima())
+    }
+
+    test "con 70 de deterioro, la velocidad máxima es 0" {
+        camionCerealero.nivelDeterioro(70)
+        assert.equals(0, camionCerealero.velocidadMaxima())
+    }
+
+    test "con -10 de deterioro, la velocidad máxima es 60" {
+        camionCerealero.nivelDeterioro(-10)
+        assert.equals(60, camionCerealero.velocidadMaxima())
+    }
+}

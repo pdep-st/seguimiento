@@ -11,3 +11,4 @@ package.json
 META-INF/
 log4j.properties
 .DS_Store
+log/
