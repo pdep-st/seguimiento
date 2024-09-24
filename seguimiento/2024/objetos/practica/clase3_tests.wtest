@@ -1,0 +1,61 @@
+import clase3.*
+
+describe "Lassie" {
+    test "inicialmente, tiene energía igual a 100" {
+        assert.equals(100, lassie.energia())
+    }
+
+    test "con energia 100, al pasear, su energía queda en 90" {
+        lassie.pasear()
+        assert.equals(90, lassie.energia())
+    }
+
+    test "con energia 100, al pasear dos veces, su energía queda en 80" {
+        lassie.pasear()
+        lassie.pasear()
+        assert.equals(80, lassie.energia())
+    }
+}
+
+describe "Doja" {
+    test "inicialmente, tiene energía igual a 100" {
+        assert.equals(100, doja.energia())
+    }
+
+    test "con energia 100, al pasear 1 km, su energía queda en 95" {
+        doja.pasear(1)
+        assert.equals(95, doja.energia())
+    }
+
+    test "con energia 100, al pasear 3 km, su energía queda en 85" {
+        doja.pasear(3)
+        assert.equals(85, doja.energia())
+    }
+
+    test "con energia 100, al pasear 3 y 4 kms, su energía queda en 65" {
+        doja.pasear(3)
+        doja.pasear(4)
+        assert.equals(65, doja.energia())
+    }
+
+
+
+}
+
+describe "Iña" {
+    test "con lassie con 100 de energía, al pasear 2 kms, lassie queda con 90 de energía" {
+        inia.pasear(2)
+        assert.equals(90, lassie.energia())
+    }
+
+    test "con doja con 100 de energía, al pasear 2 kms, doja queda con 90 de energía" {
+        inia.pasear(2)
+        assert.equals(90, doja.energia())
+    }
+
+    test "con doja y lassie con 100 de energía, al pasear 3 kms, doja queda con 85 y lassie con 90 de energía" {
+        inia.pasear(3)
+        assert.equals(90, lassie.energia())
+        assert.equals(85, doja.energia())
+    }
+}
