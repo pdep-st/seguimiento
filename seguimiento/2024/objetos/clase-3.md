@@ -1,15 +1,17 @@
-# Objetos - Clase 2
+# Objetos - Clase 3
 
 ## ¿Qué vamos a aprender?
 
 * Repaso
 * Listas
 * Bloques
+* Interfaz
+* Clases
 
 ## Material utilizado
 
 * [Presentación de la Clase](https://docs.google.com/presentation/d/1n4G_GrlpIi4ohS9M7B8IrJahY_sHOiR7OB0OVoGQIjQ)
-* [Video de Clase]()
+* [Video de Clase](https://youtu.be/lZvCuJLBvd4)
 * [Código de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2023/objetos/practica/clase3.wlk)
 * [Tests de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2023/objetos/practica/clase3_tests.wtest)
 

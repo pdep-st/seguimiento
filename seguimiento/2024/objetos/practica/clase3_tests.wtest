@@ -6,13 +6,13 @@ describe "Lassie" {
     }
 
     test "con energia 100, al pasear, su energía queda en 90" {
-        lassie.pasear()
+        lassie.pasear(1)
         assert.equals(90, lassie.energia())
     }
 
     test "con energia 100, al pasear dos veces, su energía queda en 80" {
-        lassie.pasear()
-        lassie.pasear()
+        lassie.pasear(10)
+        lassie.pasear(8)
         assert.equals(80, lassie.energia())
     }
 }

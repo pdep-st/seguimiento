@@ -5,23 +5,23 @@
  * Modelar a Iña que sale a pasear con Lassie.
  */
  
-object lassie {
+class Perro {
     var energia = 100
-
+    
     method energia() = energia
 
-    method pasear() {
+    method pasear(cantidadKms) {
         energia -= 10
     }
 }
 
+const lassie = new Perro()
+
 object inia {
-    var perro = lassie
-    var gato = doja
+    const mascotas = #{lassie, doja}
 
     method pasear(cantidadKms) {
-        gato.pasear(cantidadKms)
-        perro.pasear()
+        mascotas.forEach {mascota => mascota.pasear(cantidadKms)}
     }
 }
  
@@ -34,15 +34,7 @@ object inia {
  * Modelar este nuevo requerimiento.
  */
  
-object doja {
-    var energia = 100
-
-    method energia() = energia
-
-    method pasear(cantidadKms) {
-        energia -= 5 * cantidadKms
-    }
-}
+const doja = new Gato()
  
  
  /*
@@ -53,3 +45,25 @@ object doja {
  * que los otros perros.
  * Modelar este nuevo requerimiento.
  */
+
+class Gato {
+    var energia = 100
+
+    method energia() = energia
+
+    method pasear(cantidadKms) {
+        energia -= 5 * cantidadKms
+    }
+}
+
+const garfield = new Gato()
+
+class Golden {
+    var energia = 100
+
+    method pasear(cantidadKms) {
+        energia -= 10 * 2
+    }
+}
+
+const rocco = new Golden()
