@@ -18,3 +18,4 @@
 ## Para hacer después de la clase
 * [Objetos anónimos](https://docs.google.com/document/d/1j2VoBNczPsMXrIjJ4tycYU982CZahReTvzkWS9TTKV0/edit)
 * [Diagrama de objetos](https://docs.google.com/document/d/1eXLlNppAX-7E2M8Xxs0MCckdn4XVEYmeQNaS_E1RqTc/edit#heading=h.44sinio)
+* [Clases](https://docs.google.com/document/d/1Dgq_PfCbJHO1M7dXe-vGXtj4mbEUWlYhfvQ2i0RWOsk)
