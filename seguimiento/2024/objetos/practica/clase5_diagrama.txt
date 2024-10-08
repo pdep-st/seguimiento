@@ -1,0 +1,28 @@
+@startuml
+
+abstract Enfermedad {
+celulasAmenazadas
+
+tratar(dosis)
+estaCurada()
+{abstract} causarEfecto(paciente)
+{abstract} esAgresiva(paciente)
+}
+
+class EnfermedadInfecciosa {
+
+causarEfecto(paciente)
+reproducirse()
+esAgresiva(paciente)
+}
+
+class EnfermedadAutoinmune {
+vecesAfectado
+
+causarEfecto(paciente)
+esAgresiva(paciente)
+}
+
+Enfermedad <|-- EnfermedadInfecciosa
+Enfermedad <|-- EnfermedadAutoinmune
+@enduml
