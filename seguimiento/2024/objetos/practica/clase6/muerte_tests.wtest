@@ -1,0 +1,12 @@
+import muerte.*
+import medico.*
+import paciente.*
+
+test "Logan se contagia muerte" {
+    const logan = new Paciente()
+    logan.enfermarse(muerte)
+
+    logan.pasarDias(1)
+    
+    assert.equals(0, logan.temperatura())
+}

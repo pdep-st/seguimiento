@@ -1,0 +1,52 @@
+import jefe_de_departamento.*
+import medico.*
+import enfermedad_infecciosa.*
+import paciente.*
+
+describe "House sin subordinados" {
+    test "atiende a Cameron" {
+        const cameron = new Paciente()
+        const house = new JefeDeDepartamento(dosis = 1)
+        const malaria = new EnfermedadInfecciosa(celulasAmenazadas=1000)
+        cameron.enfermarse(malaria)
+
+        house.atender(cameron)
+
+        assert.equals(1000, malaria.celulasAmenazadas())
+    }
+
+    test "House contrae malaria" {
+        const house = new JefeDeDepartamento(dosis = 1)
+        const malaria = new EnfermedadInfecciosa(celulasAmenazadas=1000)
+        
+        house.enfermarse(malaria)
+        
+        assert.equals(1000, malaria.celulasAmenazadas())
+    }
+}
+
+describe "House con lotoki como subordinado" {
+    test "House atiende a Cameron" {
+        const cameron = new Paciente()
+        const lotoki = new Medico(dosis = 100)
+        const house = new JefeDeDepartamento(dosis = 1)
+        house.agregarSubordinado(lotoki)
+        const malaria = new EnfermedadInfecciosa(celulasAmenazadas=1000)
+        cameron.enfermarse(malaria)
+
+        house.atender(cameron)
+
+        assert.equals(0, malaria.celulasAmenazadas())
+    }
+
+    test "House contrae malaria" {
+        const lotoki = new Medico(dosis = 100)
+        const house = new JefeDeDepartamento(dosis = 1)
+        house.agregarSubordinado(lotoki)
+        const malaria = new EnfermedadInfecciosa(celulasAmenazadas=1000)
+        
+        house.enfermarse(malaria)
+        
+        assert.equals(0, malaria.celulasAmenazadas())
+    }
+}

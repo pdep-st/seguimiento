@@ -1,0 +1,23 @@
+import medico.*
+import paciente.*
+import enfermedad_infecciosa.*
+
+test "Cameron atiende a Logan" {
+      const cameron = new Medico(dosis = 10)
+      const logan = new Paciente()
+      const malaria = new EnfermedadInfecciosa(celulasAmenazadas=1000)
+      logan.enfermarse(malaria)
+
+      cameron.atender(logan)
+
+      assert.equals(850, malaria.celulasAmenazadas())
+}
+
+test "Cameron intenta curarse a si misma" {
+      const cameron = new Medico(dosis = 10)
+      const malaria = new EnfermedadInfecciosa(celulasAmenazadas=1000)
+   
+      cameron.enfermarse(malaria)
+
+      assert.equals(850, malaria.celulasAmenazadas())
+}
