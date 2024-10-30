@@ -1,6 +1,6 @@
 class Socio {
-	var cuotasImpagas
-	var bonos
+	var cuotasImpagas = []
+	var bonos = []
 	
 	method pagarDeudas() {
 		cuotasImpagas.forEach {cuota => cuota.pagar(self)}
@@ -20,8 +20,8 @@ class Socio2 {
 }
 
 class Socio3 {
-	var cuotasImpagas
-	var bonos
+	var cuotasImpagas = []
+	var bonos = []
 	
 	method pagarDeudas() {
 		const deudas = cuotasImpagas + bonos.filter({bono => bono.vencio()})

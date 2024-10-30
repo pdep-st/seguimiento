@@ -1,7 +1,7 @@
 object socio {
 
-	var cuotasImpagas
-	var bonos
+	var cuotasImpagas = []
+	var bonos = []
 
 	method pagarDeudas() {
 		self.deudas().forEach({ deuda => deuda.pagar(self)})

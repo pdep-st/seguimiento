@@ -40,7 +40,7 @@ object juanpi {
 
 object juancruz {
 	
-	var gorro
+	var gorro = null
 	
 	method nombre() = "Aguante bokita papá!"
 	
