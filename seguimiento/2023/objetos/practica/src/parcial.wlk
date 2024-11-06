@@ -15,7 +15,7 @@ class Artista {
 		groupies += cantidad
 	}
 	
-	method estaPegado() = return groupies > 20000
+	method estaPegado() = groupies > 20000
 }
 
 class Musico inherits Artista {

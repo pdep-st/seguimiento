@@ -7,7 +7,6 @@
     * Redefinir Métodos (override)
     * Super
 * Herencia vs Composición
-* Identidad vs Igualdad
 
 ## Material utilizado
 
