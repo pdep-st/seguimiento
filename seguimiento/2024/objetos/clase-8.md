@@ -9,7 +9,7 @@
 
 * [Video de Clase](https://youtu.be/ZUrwo0SADZc)
 * [Ejercicio](https://docs.google.com/document/d/1Fk8zajt6TCN7D6QmOvrix9I59ifCnFwZLYWwAaD_lsM/)
-* [Código de Clase](https://github.com/pdep-st/seguimiento/tree/main/seguimiento/2024/objetos/practica/clase8.wlk)
+* [Código de Clase](https://github.com/pdep-st/seguimiento/tree/main/seguimiento/2024/objetos/practica/simulacro.wlk)
 
 ## Para hacer después de la clase
 
