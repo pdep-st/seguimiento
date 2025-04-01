@@ -41,7 +41,6 @@ tresVecesDoble :: (Int -> Int)
 tresVecesDoble = doble . doble . doble
 
 -- signo/1
-signo :: Int -> Int
 signo x
     | x < 0 = -1
     | x > 0 = 1

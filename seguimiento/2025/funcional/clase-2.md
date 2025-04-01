@@ -12,7 +12,7 @@
 
 ## Material utilizado
 
-* Video de clase
+* [Video de clase](https://youtu.be/R9wlkxgnP18)
 * [Presentación clase](https://docs.google.com/presentation/d/13ePrznJhAbY_5P6hugUzE_2Y37daMHzNbrMLf-kODmE)
 * [Código de clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2025/funcional/practica/clase2.hs)
 
