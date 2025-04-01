@@ -12,7 +12,9 @@ g = triple
 -- y le agrega 10 metros
 
 alargarUnPoco :: Int -> Int
-alargarUnPoco longitud = longitud + 10
+alargarUnPoco longitud
+    | longitud > 0 = longitud + 10
+    | otherwise = longitud
 
 -- sirve/1: Recibe la longitud de un cable y dice 
 -- si es menor al largo maximo
@@ -39,21 +41,24 @@ tresVecesDoble :: (Int -> Int)
 tresVecesDoble = doble . doble . doble
 
 -- signo/1
-
+signo :: Int -> Int
+signo x
+    | x < 0 = -1
+    | x > 0 = 1
+    | otherwise = 0
 
 {-
 Expresado en procedural:
-
+    def signo(x) {
+        if x < 0
+            return -1
+        else if x > 0
+            return 1
+        else
+            return 0
+    }
 -}
 
--- divisible3/1
-divisible3 numero = not (numero `mod` 3 /= 0)
-
-fLoca x y
-    | x > 0 = y < 0
-    | otherwise = y > 0
-
-fLoca' x y = (x > 0 && y < 0) || (y > 0) -- No es correcto, Martín se equivocó
 
 -- probabilidadLluvia/1 (clima)
 --   "Despejado"      0
@@ -61,6 +66,11 @@ fLoca' x y = (x > 0 && y < 0) || (y > 0) -- No es correcto, Martín se equivocó
 --   "Relampaguea"    100
 --   cualquierOtro    40
 
+probabilidadLluvia clima
+    | clima == "Despejado" = 0
+    | clima == "Nublado" = 50
+    | clima == "Relampaguea" = 100
+    | otherwise = 40
 
 -- buenDia/1
 -- "Lunes"  False
@@ -77,3 +87,10 @@ buenDia dia
 -}
 
 -- esMayorA10DespuesDeIncrementar/1
+esMayorA10DespuesDeIncrementar x -- El que hace esto, le corto los dedos
+    | x + 1 > 10 = True
+    | otherwise = False
+
+esMayorA10DespuesDeIncrementar' x = x + 1 > 10
+
+noEsMayorA10DespuesDeIncrementar = not . esMayorA10DespuesDeIncrementar'
