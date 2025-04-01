@@ -1,17 +1,42 @@
 import Text.Show.Functions
+
+doble x = 2 * x
+
+triple x = 3 * x
+
+f = doble
+g = triple
+
+
 -- alargarUnPoco/1: Recibe la longitud de un cable 
 -- y le agrega 10 metros
 
+alargarUnPoco :: Int -> Int
+alargarUnPoco longitud = longitud + 10
+
 -- sirve/1: Recibe la longitud de un cable y dice 
--- si es mayor al largo maximo
+-- si es menor al largo maximo
+
+longitudMaxima = 100
+
+sirve :: Int -> Bool
+sirve longitud = longitud < longitudMaxima
 
 
 -- sirveAlargandoUnPoco/1
+-- nos indica si una longitud es util luego de alargarla 10 metros
 
+sirveAlargandoUnPoco :: (Int -> Bool)
+-- sirveAlargandoUnPoco longitud = sirve (alargarUnPoco longitud)
+sirveAlargandoUnPoco = sirve . alargarUnPoco
+
+-- (.) :: funcion -> funcion -> funcion
 
 -- g o f (x) = g(f(x))
 
 --tresVecesDoble unNumero = ?
+tresVecesDoble :: (Int -> Int)
+tresVecesDoble = doble . doble . doble
 
 -- signo/1
 
