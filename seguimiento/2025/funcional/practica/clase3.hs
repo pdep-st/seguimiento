@@ -58,22 +58,33 @@ factorial numero = factorial (numero - 1) * numero
 
 -- dividir: un número por otro,
 -- obteniendo la parte entera y el resto
-
+dividir dividendo divisor = (div dividendo divisor, mod dividendo divisor)
 -- esPar usando dividir
-
+esPar numero = snd(dividir numero 2) == 0
 -- punto: x, y
 
+punto = (1, 2)
 
 -- nacimiento (año, mes, dia)
-
-
+nacimientoThiago = (2004, 7, 31)
+anio (anio, _, _) = anio
+mes (_, mes, _) = mes
+dia (_, _, dia) = dia
 -- persona: Nombre, Apellido, Edad
+thiago :: Persona
+thiago = ("Thiago", "Mathus", 20)
+type Persona = (String, String, Integer)
 
+cursarUTN :: Persona -> Persona
+cursarUTN persona = 
+    (cumplirAnios . cumplirAnios . cumplirAnios . 
+      cumplirAnios . cumplirAnios . cumplirAnios) persona
 
 -- auto: Marca, Modelo, Año
-
+etios = ("Toyota", "Etios", 2024)
 
 -- cumplirAnios: Crecer un año
-
+cumplirAnios (nombre, apellido, edad) = (nombre,apellido,edad + 1)
+edad (nombre, apellido, edad) = edad
 
 -- tieneNombreLargo
