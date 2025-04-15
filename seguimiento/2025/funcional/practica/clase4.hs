@@ -43,22 +43,36 @@ sirveAlargandoUnPoco' =
     where longitudMaxima = 25
  
  -- esElMismo/2: Se cumple cuando los dos elementos que recibe son iguales
- 
- 
+esElMismo x y = x == y 
+esElMismo' x = (\y -> y == x )
+
+esMartin = esElMismo "Martin"
+
  -- esDivisiblePorDos
- 
+esDivisiblePorDos numero = mod numero 2 == 0
+esDivisiblePorDos' = (0 ==) . (`mod` 2)
+
+
 fLoca :: Int -> Int -> Int -> Int
 fLoca x y z = x - y + (z * 2)
  -- aplicar x = 2, y = 1, z = 3
- -- 
+ -- fLoca 2 1 3 -> 7
  -- aplicar x = 2, y = 1
- -- 
+ -- fLoca 2 1 :: Int -> Int
  -- aplicar x = 2
- -- 
+ -- fLoca 2 :: Int -> Int -> Int
  -- no aplicar nada
- -- 
+ -- fLoca :: Int -> Int -> Int -> Int
  -- aplicar y = 1, z = 3
+ --  (aplicar fLoca 1 3) 2
  -- 
+
+aplicar f y z x = f x y z
+aplicar' f y = flip ( flip fLoca y)
  
- 
- -- flip
+ -- flip  
+
+flip' f x y = f y x
+
+-- aplicar y = 1, z = 3 
+-- (flip ( flip fLoca 1) 3) 2
