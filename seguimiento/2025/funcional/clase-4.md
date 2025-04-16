@@ -11,8 +11,8 @@
 
 ## Material utilizado
 
-* [Video de clase]
-* [Presentación clase](https://docs.google.com/presentation/d/1cEk9D1oQzCM4e4c1XDGqUSoE2GcZ1rEWryr_sgYnG_M)
+* [Video de clase](https://youtu.be/EpujFS1xdwU)
+* [Presentación clase](https://docs.google.com/presentation/d/1sia0qBkW8bNt6x9e8UMWCj4c4FyJ-_DjvVsrdeB3DxE)
 * [Ejercicio hecho en clase](https://docs.google.com/document/d/1rHut9mKKa3ABxQGyQ2teRbE6WRuytsGH_Y9wj-bBMb8)
 * [Código de clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2025/funcional/practica/clase4.hs)
 
