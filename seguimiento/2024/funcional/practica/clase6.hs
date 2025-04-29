@@ -3,7 +3,6 @@
  -- estaVacia
  
  --tieneUnSoloElemento
- -- tieneUnSoloElemento (_:[]) = True
  
  --estaOrdenada
  
