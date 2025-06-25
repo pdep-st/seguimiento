@@ -12,6 +12,7 @@ alumno(malena).
 alumno(raul).
 alumno(carlos).
 alumno(santiago).
+alumno(martina).
 
 
 /*
@@ -56,11 +57,15 @@ anio(Anio) :- materia(_, Anio).
     - Queremos poder hacerlo muchas veces esta tarea pero con diferentes alumnos
    - Queremos saber si un alumno esta al principio de la carrera, esto es cuando aún no rindió ningún examen
 */       
- nota(nicolas, pdep, 10).
- nota(nicolas, proba, 7).
- nota(nicolas, sintaxis, 8).
- nota(malena, pdep, 6).
- nota(raul, pdep, 9).
+nota(nicolas, pdep, 10).
+nota(nicolas, proba, 7).
+nota(nicolas, sintaxis, 8).
+nota(malena, pdep, 6).
+nota(raul, pdep, 9).
+nota(martina, sintaxis, 6).
+nota(martina, algoritmos, 10).
+nota(martina, pdep, 8).
+nota(martina, analisis1, 7).
 
 rindio(Alumno):- nota(Alumno,_,_).
 aprobo(Alumno, Materia):- nota(Alumno,Materia,Nota), Nota >= 6.
@@ -80,3 +85,30 @@ estaAlPrincipio(Alumno) :-
         1. materias de un anio?
         2. aprobo materia?
 */
+
+% forall/2
+% Para todas
+% las materias que aprobó el Alumno
+% se cumple que
+% son materias de determinado Anio
+
+/* No!
+aproboAnio(Alumno, Anio):-
+    forall(
+        aprobo(Alumno, Materia),
+        materia(Materia, Anio)
+    ).
+*/
+
+% Para todas
+% las materias de un Anio
+% se cumple que
+% el Alumno las aprobó
+
+aproboAnio(Alumno, Anio):-
+    alumno(Alumno),
+    anio(Anio),
+    forall(
+        materia(Materia, Anio),
+        aprobo(Alumno, Materia)
+    ).
