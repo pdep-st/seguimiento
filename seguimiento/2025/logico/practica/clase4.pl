@@ -74,6 +74,14 @@ jugo(mario, argentina).
 */
 
 % Cuántos nadadores hay?
+nadador(Deportista):-practica(Deportista,natacion(_,_,_)).
+
+cuantosNadadores(Cantidad):-
+    findall(
+        Nadador,
+        nadador(Nadador),
+        Nadadores),
+    length(Nadadores,Cantidad).
 
 
 %%% Jugando al TEG
