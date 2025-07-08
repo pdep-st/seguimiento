@@ -14,6 +14,17 @@ y si agregamos el polo que solo sabemos el handicap del jugador,
 y es bueno si tiene un handicap mayor a 6
 no tiene medallas
 */
+practica(cambiasso, polo(10)).
+
+% Medallas obtenidas
+medallas(Deportista, Cantidad):-
+    practica(Deportista, Deporte),
+    medallasDeporte(Deporte, Cantidad).
+
+medallasDeporte(natacion(_, _, Cantidad), Cantidad).
+medallasDeporte(futbol(Cantidad, _, _), Cantidad).
+medallasDeporte(rugby(_, Cantidad), Cantidad).
+medallasDeporte(polo(_), 0).
 
 buenDeportista(Deportista):-
     practica(Deportista, Deporte),
@@ -26,6 +37,7 @@ buenDeporte(futbol(_, Goles, Expulsiones)):-
     Indice < 5.
 buenDeporte(rugby(wing, _)).
 buenDeporte(rugby(pilar, _)).
+buenDeporte(polo(Handicap)):- Handicap > 6.
 
 % Agregar un par de jugadores de basket, que se conoce en qué ligas jugó y su edad
 % un jugador de basket se considera que es una buena práctica si jugó en al menos dos ligas 
