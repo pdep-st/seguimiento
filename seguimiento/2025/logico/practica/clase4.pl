@@ -103,23 +103,61 @@ ocupa(sumatra, negro, 3).
 ocupa(java, negro, 4).
 ocupa(borneo, negro, 1).
 
+jugador(Jugador):- ocupa(_, Jugador, _).
 
 % ¿Cuántos países ocupa un jugador?
 
+ocupaJugador(Jugador, Cantidad) :-
+    jugador(Jugador),
+    findall(
+        Pais,
+        ocupa(Pais, Jugador, _),
+        Paises
+        ),
+    length(Paises, Cantidad).
 
 % ¿Cuántos países están cargados? Un país está cargado cuando tiene más de 7 fichas.
 
+estaCargado(Pais):-
+    ocupa(Pais, _, Fichas),
+    Fichas>7.
+
+cuantosPaisesCargados(Cantidad):-
+    findall(
+        Pais,
+        estaCargado(Pais),
+        Paises
+        ),
+    length(Paises, Cantidad).
 
 % ¿Qué jugadores ocupan países con más de 5 fichas?
 
+ocupaConMasDe5Fichas(Jugador):- 
+    ocupa(_, Jugador, Fichas),
+    Fichas > 5.
 
 % Cuántas fichas tiene cada jugador?
 
+cuantasFichas(Jugador, Cantidad):-
+    jugador(Jugador),
+    findall(
+        Fichas,
+        ocupa(_, Jugador, Fichas),
+        FichasTotales
+        ),
+    sum_list(FichasTotales, Cantidad).
     
 
 % Está armado un jugador cuando tiene dos países o más con al menos 6 fichas
 
+paisArmado(Pais) :-
+    ocupa(Pais, _, Fichas),
+    Fichas >= 6.
 
+estaArmado(Jugador):-
+    ocupa(Pais, Jugador, _), paisArmado(Pais),
+    ocupa(OtroPais, Jugador, _), paisArmado(OtroPais),
+    Pais \= OtroPais. 
 
 % Al principio de cada turno se incorporan ejércitos al mapa. Queremos saber cuántos ejércitos 
 % puede incorporar un jugador. Es la suma de:
