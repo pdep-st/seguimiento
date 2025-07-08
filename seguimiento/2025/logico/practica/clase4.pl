@@ -9,6 +9,8 @@ practica(pichot, rugby(mariscal, 1)).
 practica(pablito, rugby(wing, 0)).
 practica(falsoPhelps, rugby(nadador, 34)).
 
+practica(valentina, billar).
+
 /* 
 y si agregamos el polo que solo sabemos el handicap del jugador, 
 y es bueno si tiene un handicap mayor a 6
@@ -40,13 +42,36 @@ buenDeporte(rugby(pilar, _)).
 buenDeporte(polo(Handicap)):- Handicap > 6.
 
 % Agregar un par de jugadores de basket, que se conoce en qué ligas jugó y su edad
-% un jugador de basket se considera que es una buena práctica si jugó en al menos dos ligas 
+% un jugador de basket se considera que es una buena práctica si
+% jugó en al menos dos ligas 
 % o si jugó en la nba (y si también es buena si juega en la euroliga?)
 % o si tiene más de 40 años
-    % Agregar a manu que juega al basket, jugó en argentina, euroliga, nba 
-    % la edad actual que tiene (45)
+    % Agregar a manu que juega al basket, jugó en argentina, euroliga, nba
+    % la edad actual que tiene (46)
+practica(manu, basket([nba, euroliga, argentina], 46)).
     % Agregar a mario que juega al basket, jugo solo en argentina, tiene 33 años
+practica(mario, basket([argentina], 33)).
 
+buenDeporte(basket(Ligas, _)):-
+    length(Ligas, CantidadLigas),
+    CantidadLigas >= 2.
+    % jugo(Deportista, Liga),
+    % jugo(Deportista, OtraLiga),
+    % Liga \= OtraLiga.
+
+buenDeporte(basket(Ligas, _)):-
+    member(nba, Ligas).
+    % jugo(Deportista, nba).
+
+buenDeporte(basket(_, Edad)):-
+    Edad > 40.
+
+/*
+jugo(manu, nba).
+jugo(manu, euroliga).
+jugo(manu, argentina).
+jugo(mario, argentina).
+*/
 
 % Cuántos nadadores hay?
 
