@@ -1,0 +1,44 @@
+import clase2.*
+
+describe "Camion de verduras" {
+
+    test "El camión de verduras sin cajones, tiene peso 0" {
+        // 1. Armar el contexto
+        // No hay que armar nada
+        // 2. Ejecutar el escenario
+        const pesoCalculado = camionDeVerduras.peso()
+        // 3. Validar el resultado
+        assert.equals(0, pesoCalculado)
+    }
+
+    test "El camión de verduras con 5 cajones, tiene peso 250" {
+        // 1. Armar el contexto
+        camionDeVerduras.cargarCajones(5)
+        // 2. Ejecutar el escenario
+        const pesoCalculado = camionDeVerduras.peso()
+        // 3. Validar el resultado
+        assert.equals(250, pesoCalculado)
+    }
+
+    test "El camión de verduras con 1000 cajones, tiene peso 50000" {
+        camionDeVerduras.cargarCajones(1000)
+        assert.equals(50000, camionDeVerduras.peso())
+    }
+
+    test "El camión de verduras, al cargar cajones incrementa el peso en 50 por cada cajón" {
+        camionDeVerduras.cargarCajones(1)
+        assert.equals(50, camionDeVerduras.peso())
+        camionDeVerduras.cargarCajones(5)
+        assert.equals(300, camionDeVerduras.peso())
+    }
+
+    test "El camión de verduras con 10 cajones, al ir bajando cajones, decrementa el peso en 50" {
+        camionDeVerduras.cargarCajones(10)
+        assert.equals(500, camionDeVerduras.peso())
+        
+        camionDeVerduras.bajarCajones(1)
+        assert.equals(450, camionDeVerduras.peso())
+        camionDeVerduras.bajarCajones(5)
+        assert.equals(200, camionDeVerduras.peso())
+    }
+}
