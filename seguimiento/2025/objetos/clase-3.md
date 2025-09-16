@@ -11,9 +11,9 @@
 ## Material utilizado
 
 * [Presentación de la Clase](https://docs.google.com/presentation/d/1n4G_GrlpIi4ohS9M7B8IrJahY_sHOiR7OB0OVoGQIjQ)
-* [Video de Clase](https://youtu.be/lZvCuJLBvd4)
-* [Código de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2024/objetos/practica/clase3.wlk)
-* [Tests de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2024/objetos/practica/clase3_tests.wtest)
+* [Video de Clase]()
+* [Código de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2025/objetos/practica/clase3.wlk)
+* [Tests de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2025/objetos/practica/clase3_tests.wtest)
 
 ## Para hacer después de la clase
 * [Objetos anónimos](https://docs.google.com/document/d/1j2VoBNczPsMXrIjJ4tycYU982CZahReTvzkWS9TTKV0/edit)
