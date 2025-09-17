@@ -10,8 +10,8 @@
 
 ## Material utilizado
 
-* [Presentación de la Clase](https://docs.google.com/presentation/d/1n4G_GrlpIi4ohS9M7B8IrJahY_sHOiR7OB0OVoGQIjQ)
-* [Video de Clase]()
+* [Presentación de la Clase](https://docs.google.com/presentation/d/1LgonR7dpJAainKL-v-oNdkYJPdW-tL5PpQHsh4XMcDM)
+* [Video de Clase](https://youtu.be/X7hipF5-bvs)
 * [Código de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2025/objetos/practica/clase3.wlk)
 * [Tests de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2025/objetos/practica/clase3_tests.wtest)
 

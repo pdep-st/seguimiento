@@ -1,0 +1,55 @@
+import clase3.*
+
+describe "Lassie con energía 100" {
+    test "Al pasear, queda con 90 de energía" {
+        lassie.pasear(1)
+        assert.equals(90, lassie.energia())
+    }
+
+    test "Al pasear dos veces, queda con 80 de energía" {
+        lassie.pasear(1)
+        lassie.pasear(2)
+        assert.equals(80, lassie.energia())
+    }
+}
+
+describe "Doja con energía 100" {
+    test "Al pasear un kilómetro, queda con 95 de energía" {
+        doja.pasear(1)
+        assert.equals(95, doja.energia())
+    }
+
+    test "Al pasear 5 kilómetros, queda con 75 de energía" {
+        doja.pasear(5)
+        assert.equals(75, doja.energia())
+    }
+}
+
+describe "Iña con Lassie y Doja" {
+    test "Pasea 3 kilómetros y Lassie queda con 90 y Doja con 85 de energía" {
+        inia.pasear(3)
+        assert.equals(90, lassie.energia())
+        assert.equals(85, doja.energia())
+    }
+    test "Pasea 1 kilómetro y después otros 2 y Lassie queda con 80 y Doja con 85 de energía" {
+        inia.pasear(1)
+        inia.pasear(2)
+        assert.equals(80, lassie.energia())
+        assert.equals(85, doja.energia())
+    }
+}
+
+describe "Iña con Lassie, Doja y Garfield" {
+    const garfield = new Gato()
+
+    method initialize() {
+        inia.agregarMascota(garfield)
+    }
+    
+    test "Al pasear 1 kilómetro, Lassie queda con 90 y Doja y Garfield con 95" {
+        inia.pasear(1)
+        assert.equals(90, lassie.energia())
+        assert.equals(95, doja.energia())
+        assert.equals(95, garfield.energia())
+    }
+}
