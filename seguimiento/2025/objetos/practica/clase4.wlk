@@ -1,3 +1,23 @@
+const album = #{1, 2, 3, 4, 5, 6}
+
+object coleccionista {
+    const figuritas = [] // Mutable
+    var plata = 1000 // Inmutable
+
+    method abrirSobre(sobre) {
+        figuritas.addAll(sobre)
+    }
+
+    method completoElAlbum() {
+        return album == figuritas.asSet()
+    }
+
+    method poderFiguril() = figuritas.sum()
+
+    method figuritas() = figuritas.copy()
+    method plata() = plata
+}
+
 
 
 
