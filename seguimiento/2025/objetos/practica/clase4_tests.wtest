@@ -1,0 +1,28 @@
+import clase4.*
+
+describe "Cajero" {
+    test "inicialmente podemos extraer 1000 satisfactoriamente" {
+        assert.equals(1000, cajero.sacarPlata(1000))
+    }
+
+    test "no podemos extraer 100001" {
+        assert.throwsExceptionLike(new DomainException(message = "No tengo plata"), {cajero.sacarPlata(100001)})
+    }
+}
+
+describe "Dora" {
+    test "saca 1000" {
+        dora.sacarPlata(1000)
+        assert.equals(1000, dora.plata())
+    }
+
+    test "intenta sacar 120000, recibe la mitad" {
+        dora.sacarPlata(120000)
+        assert.equals(60000, dora.plata())
+    }
+
+    test "intenta sacar 300000, no saca nada" {
+        dora.sacarPlata(300000)
+        assert.equals(0, dora.plata())
+    }
+}
