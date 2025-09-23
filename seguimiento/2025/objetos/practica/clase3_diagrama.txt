@@ -1,0 +1,42 @@
+www.plantuml.com/plantuml/png/bP3DIiKm48NtynH3LwtGFa4etRaGqPthCHrrQdvaagxQlhkO4k72XSjTdeJlv3kPKYRDgtS0rb5A-4WvuWOSM3-507ueCMdxBIvwpXfJL-_Q3evAlRBgNLXyNzXc_8E5_-CS5wgL4eJGcBUdbt743Jmb6pEbgzK7VCdC9s95hMC02PdrWopZyudYTjEgZ3TxtvycPLN9LRHMcNqOobTTdXG0YaO_OlFGrBS1OE8mhzxz0W00
+
+@startuml
+
+class Gato {
+energia
+
+pasear(kilometros)
+energia()
+}
+
+class Perro {
+energia
+
+pasear(kilometros)
+energia()
+}
+
+object lassie
+
+object doja
+
+class inia <<WKO>> {
+mascotas
+
+pasear(kilometros)
+}
+hide inia circle
+
+interface Mascota {
+pasear(kilometros)
+energia()
+}
+
+Gato <|-- doja
+Perro <|-- lassie
+Mascota <|.. Gato
+Mascota <|.. Perro
+inia -> "*" Mascota
+
+
+@enduml
