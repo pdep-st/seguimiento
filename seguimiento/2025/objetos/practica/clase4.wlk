@@ -20,13 +20,6 @@ object coleccionista {
 
 
 
-
-
-
-
-
-
-
 /*
 Tenemos a Dora que, ademas de otra gente,
 quiere sacar plata del cajero y guardarla en su monedero
