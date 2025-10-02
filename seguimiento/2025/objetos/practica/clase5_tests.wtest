@@ -1,0 +1,18 @@
+import clase5.*
+
+describe "Logan" {
+    test "contrae lupus y no pierde celulas" {
+        const logan = new Persona(cantidadCelulas=100000)
+        const lupus = new EnfermedadAutoinmune(celulasAmenazadas=1800)
+        logan.contraer(lupus)
+        assert.equals(100000, logan.cantidadCelulas())
+    }
+
+    test "con lupus, al vivir un día, pierde 1800 celulas" {
+        const logan = new Persona(cantidadCelulas=100000)
+        const lupus = new EnfermedadAutoinmune(celulasAmenazadas=1800)
+        logan.contraer(lupus)
+        logan.vivir()
+        assert.equals(98200, logan.cantidadCelulas())
+    }
+}
