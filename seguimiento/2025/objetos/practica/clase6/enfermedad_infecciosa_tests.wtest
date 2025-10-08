@@ -1,0 +1,10 @@
+import enfermedad_infecciosa.*
+
+describe "Malaria" {
+    const malaria = new EnfermedadInfecciosa(celulasAmenazadas=1500)
+
+    test "al dar 2 dosis de medicamento, queda con 1470 celulas amenazadas" {
+        malaria.darMedicamento(2)
+        assert.equals(1470, malaria.celulasAmenazadas())
+    }
+}

@@ -1,0 +1,20 @@
+import persona.*
+import enfermedad_infecciosa.*
+import enfermedad_autoinmune.*
+
+describe "Bauti con lupus y malaria" {
+    const bauti = new Persona()
+    const malaria = new EnfermedadInfecciosa(celulasAmenazadas=1500)
+    const lupus = new EnfermedadAutoinmune(celulasAmenazadas=1800)
+
+    method initialize() {
+        bauti.contraer(malaria)
+        bauti.contraer(lupus)
+    }
+
+    test "Al curarse con 3 dosis, la malaria queda en 1455 y el lupus en 1755" {
+        bauti.curar(3)
+        assert.equals(1455, malaria.celulasAmenazadas())
+        assert.equals(1755, lupus.celulasAmenazadas())
+    }
+}

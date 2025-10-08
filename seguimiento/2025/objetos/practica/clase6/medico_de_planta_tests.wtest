@@ -1,0 +1,30 @@
+import medico_de_planta.*
+import persona.*
+import enfermedad_autoinmune.*
+
+describe "Cameron y Logan con Lupus" {
+    const cameron = new MedicoDePlanta(dosis=10)
+    const logan = new Persona()
+    const lupus = new EnfermedadAutoinmune(celulasAmenazadas=1800)
+
+    method initialize() {
+        logan.contraer(lupus)
+    }
+
+    test "Al atender a Logan, el lupus queda en 1650 células" {
+        cameron.atender(logan)
+        assert.equals(1650, lupus.celulasAmenazadas())
+    }
+
+    test "Al contraer lupus, se cura a sí mismo en 150 células" {
+        cameron.contraer(lupus)
+        assert.equals(1650, lupus.celulasAmenazadas())
+    }
+
+    test "Cameron al contraer lupus y atenderse a sí mismo, reduce el lupus en 300 celulas" {
+        cameron.contraer(lupus)
+        assert.equals(1650, lupus.celulasAmenazadas())
+        cameron.atender(cameron)
+        assert.equals(1500, lupus.celulasAmenazadas())
+    }
+}

@@ -29,7 +29,7 @@ class Persona {
 }
 
 class EnfermedadInfecciosa inherits Enfermedad {
-    method afectar(persona) {
+    override method afectar(persona) {
         persona.aumentarTemperatura(celulasAmenazadas / 1000)
     }
 
@@ -37,18 +37,18 @@ class EnfermedadInfecciosa inherits Enfermedad {
         celulasAmenazadas *= 2
     }
 
-    method esAgresiva(personaAfectada) = celulasAmenazadas > 0.1 * personaAfectada.cantidadCelulas()
+    override method esAgresiva(personaAfectada) = celulasAmenazadas > 0.1 * personaAfectada.cantidadCelulas()
 }
 
 class EnfermedadAutoinmune inherits Enfermedad {
     var diasAfectado = 0
 
-    method afectar(persona) {
+    override method afectar(persona) {
         persona.perderCelulas(celulasAmenazadas)
         diasAfectado += 1
     }
 
-    method esAgresiva(persona) = diasAfectado > 30
+    override method esAgresiva(persona) = diasAfectado > 30
 }
 
 class Enfermedad {

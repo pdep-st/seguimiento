@@ -1,0 +1,10 @@
+import enfermedad_autoinmune.*
+
+describe "Lupus" {
+    const lupus = new EnfermedadAutoinmune(celulasAmenazadas=1800)
+
+    test "al dar 2 dosis de medicamento, queda con 1770 celulas amenazadas" {
+        lupus.darMedicamento(2)
+        assert.equals(1770, lupus.celulasAmenazadas())
+    }
+}

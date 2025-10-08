@@ -1,0 +1,24 @@
+import jefe_de_departamento.*
+import medico_de_planta.*
+import enfermedad_autoinmune.*
+
+describe "House" {
+    const cameron = new MedicoDePlanta(dosis=10)
+    const house = new JefeDeDepartamento(subordinados=#{cameron})
+    const lupus = new EnfermedadAutoinmune(celulasAmenazadas=1800)
+    const otroLupus = new EnfermedadAutoinmune(celulasAmenazadas=2000)
+
+    method initialize() {
+        cameron.contraer(lupus)
+    }
+
+    test "House puede atender a cameron usando a cameron" {
+        house.atender(cameron)
+        assert.equals(1500, lupus.celulasAmenazadas())
+    }
+
+    test "House contrae lupus y se atiende" {
+        house.contraer(otroLupus)
+        assert.equals(1850, otroLupus.celulasAmenazadas())
+    }
+}

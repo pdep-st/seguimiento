@@ -1,0 +1,80 @@
+@startuml
+class Persona {
+    enfermedades
+    temperatura
+    cantidadCelulas
+    
+    contraer(enfermedad)
+    vivir(dias)
+    curar(dosis)
+}
+
+abstract Medico {
+    contraer(enfermedad)
+    {abstract} atender(paciente)
+}
+
+class MedicoDePlanta {
+    dosis
+    
+    atender(paciente)
+}
+
+class JefeDeDepartamento {
+    subordinados
+
+    atender(paciente)
+}
+
+abstract EnfermedadCelular {
+    celulasAmenazadas
+   
+    darMedicamento(dosis)
+    estaCurada()
+    {abstract} afectar(persona)
+    {abstract} esAgresiva(persona)
+}
+
+
+class EnfermedadAutoinmune {
+    diasAfectado
+
+    afectar(persona)
+    esAgresiva(persona)
+}
+
+class EnfermedadInfecciosa {
+    afectar(persona)
+    esAgresiva(persona)
+    reproducirse()
+}
+
+class muerte <<object>> {
+    darMedicamento(dosis)
+    estaCurada()
+    afectar(persona)
+    esAgresiva(persona)
+}
+
+interface Enfermedad {
+    darMedicamento(dosis)
+    estaCurada()
+    afectar(persona)
+    esAgresiva(persona)
+}
+
+Persona <|-- Medico
+Medico <|-- MedicoDePlanta
+Medico <|-- JefeDeDepartamento
+
+JefeDeDepartamento --> "*" Medico
+
+EnfermedadCelular <|-- EnfermedadAutoinmune
+EnfermedadCelular <|-- EnfermedadInfecciosa
+
+Enfermedad <|.. EnfermedadCelular
+Enfermedad <|... muerte
+
+Persona -> "*" Enfermedad
+
+@enduml
