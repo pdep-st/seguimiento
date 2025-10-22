@@ -14,7 +14,7 @@
 * [Video de Clase](https://youtu.be/Ub5AFkQg6mY)
 * [Ejercicio Method Lookup](https://docs.google.com/document/d/1AbBK9mD8k79AxywClB6jOMo3RHqaBWhwKn9r0UPWM0E)
 * [Ejercicio](https://docs.google.com/document/d/1_SjhYafWzoMbXVYeRYEg8ajdnGGrriq2oq1JFLd7yiw/)
-* [Código de Clase](https://github.com/pdep-st/seguimiento/tree/main/seguimiento/2023/objetos/practica/clase7.wlk)
+* [Código de Clase](https://github.com/pdep-st/seguimiento/tree/main/seguimiento/2024/objetos/practica/clase7.wlk)
 
 ## Para hacer después de la clase
 
