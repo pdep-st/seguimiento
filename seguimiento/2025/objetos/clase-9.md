@@ -1,4 +1,4 @@
-# Objetos - Clase 8
+# Objetos - Clase 9
 
 ## ¿Qué vamos a aprender?
 
@@ -11,3 +11,4 @@
 
 * [Video de Clase](https://youtu.be/MVaXlBoTrWE)
 * [Código de Clase](https://github.com/pdep-st/seguimiento/tree/main/seguimiento/2025/objetos/practica/simulacro.wlk)
+
