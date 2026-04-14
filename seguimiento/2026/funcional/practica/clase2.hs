@@ -29,3 +29,44 @@ sirve longitud = longitud < largoMaximo
 
 sirveAlargandoUnPoco :: Number -> Bool
 sirveAlargandoUnPoco longitud = (sirve . alargarUnPoco) longitud
+
+
+signo :: Number -> Number
+signo x 
+    |x < -10 = -1 
+    |x < 0 = 0
+    |otherwise = 1
+
+
+{-
+esMayorDeEdad :: Number -> Bool
+esMayorDeEdad edad 
+    |edad >= 18 = True
+    |otherwise = False
+
+-}
+
+esMayorDeEdad :: Number -> Bool
+esMayorDeEdad edad = edad >= 18 
+
+
+floca algo 
+    |algo < 3 = "Antonio"
+    |otherwise = 8
+
+
+-- en procedural
+{- 
+int signo(int numero) {
+
+    if (numero < 0) {
+        return -1 
+        }
+    else if (numero == 0) {
+        return 0
+        }
+    else {
+        return 1
+        }
+}
+-}
