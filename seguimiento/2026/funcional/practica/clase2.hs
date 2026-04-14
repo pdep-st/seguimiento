@@ -37,6 +37,17 @@ signo x
     |x < 0 = 0
     |otherwise = 1
 
+-- cuentaLoca :: Number -> Number -> Number -> Number -> Number
+cuentaLoca x b y z
+    |x < b = -1 
+    |x > b = 0
+    |y == z = 0
+    |otherwise = 1
+
+comparacionLoca a b
+    |a < b = -1
+    |a > b = 1
+    |a == b = 0
 
 {-
 esMayorDeEdad :: Number -> Bool
@@ -50,10 +61,11 @@ esMayorDeEdad :: Number -> Bool
 esMayorDeEdad edad = edad >= 18 
 
 
+{-
 floca algo 
     |algo < 3 = "Antonio"
     |otherwise = 8
-
+-}
 
 -- en procedural
 {- 
