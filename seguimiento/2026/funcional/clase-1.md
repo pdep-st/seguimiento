@@ -7,10 +7,6 @@
 * Transparencia referencial en paradigma funcional
 * Haskell como lenguaje que implementa el paradigma funcional
 
-## Material utilizado
-
-* [Código de clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2026/funcional/practica/clase1.hs)
-
 ### Lecturas recomendadas
 
 * [Introducción de Conceptos](https://docs.google.com/document/d/1QP1ftd6jvAlVZOAsVPJ_1I0O7WW9MaIrn6zfW-iJdrY/edit)
