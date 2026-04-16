@@ -4,6 +4,7 @@
 
 * [Cronograma](https://docs.google.com/spreadsheets/d/1fJZgp4jOkRzq8wAouyf2YWWz62sIBGCipy4DhL5_7Sk)
 * [Link a Discord](https://discord.gg/Tcpp38czus)
+* [Notion de la cátedra](https://www.notion.so/Paradigmas-de-Programaci-n-33b2b2a220678097ba96c21569726985)
 
 ## Paradigma Funcional
 
