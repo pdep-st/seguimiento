@@ -20,4 +20,4 @@
 ## Para hacer después de la clase
 
 * [Repaso - Leer Apunte Modelado de Información (solo Tuplas)](https://docs.google.com/document/d/11C2UAbP70dP7sTID-ZxJm_a-5ypKxQUEuZr6GVk5yFI/edit#heading=h.x2xuqlkw85oe)
-* [Trabajo Práctico - Entrega #1](https://docs.google.com/document/d/1y6qCKT-VwOG-VOVVjusIr1ZI0ZqPdQhaPanlPNp9lVQ)
+* [Trabajo Práctico - Entrega #1](https://docs.google.com/document/d/1igY4TcUR0Fb8pnGncSxZyPMWY51yJzZ7IvbdK9s6Whk)
