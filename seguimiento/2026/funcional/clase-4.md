@@ -16,7 +16,7 @@
 ## Material utilizado
 
 * [Video de clase](https://youtu.be/EpujFS1xdwU)
-* [Código y ejericio hecho en clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2026/funcional/practica/clase4.hs)
+* [Código y ejercicio hecho en clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2026/funcional/practica/clase4.hs)
 
 ## Para hacer después de la clase
 * [Ver Presentación](https://docs.google.com/presentation/d/1sia0qBkW8bNt6x9e8UMWCj4c4FyJ-_DjvVsrdeB3DxE)
