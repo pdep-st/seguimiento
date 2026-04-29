@@ -3,21 +3,23 @@
 ## ¿Qué vamos a aprender?
 
 * Repaso de conceptos
-    * Tuplas
-    * Pattern Matching
-* Definiciones Locales (Where / Lambda)
-* Aplicación Parcial
+   * Tuplas
+   * Strings
+   * Composición
 * Listas
+   * Funciones básicas
+   * Funciones con orden superior
+* Aplicación Parcial
+* Definiciones Locales (Where)
+* Expresiones lambda
 
 ## Material utilizado
 
 * [Video de clase](https://youtu.be/EpujFS1xdwU)
-* [Presentación clase](https://docs.google.com/presentation/d/1sia0qBkW8bNt6x9e8UMWCj4c4FyJ-_DjvVsrdeB3DxE)
-* [Ejercicio hecho en clase](https://docs.google.com/document/d/1rHut9mKKa3ABxQGyQ2teRbE6WRuytsGH_Y9wj-bBMb8)
-* [Código de clase](https://docs.google.com/presentation/d/1Rply-8KvdQ5GXZI3NE5OqgkbdxhqFYZ-cAgjUjiWBjo)
+* [Código y ejericio hecho en clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2026/funcional/practica/clase4.hs)
 
 ## Para hacer después de la clase
-
+* [Ver Presentación](https://docs.google.com/presentation/d/1sia0qBkW8bNt6x9e8UMWCj4c4FyJ-_DjvVsrdeB3DxE)
 * [Repaso - Leer Apunte Composición - Aplicación Parcial](https://docs.google.com/document/d/1n7TPE2qRpFSnj95lIZFD-q7Ko_DT9XZLH9_kEkNClrU/edit?usp=sharing)
 * [Repaso - Leer Apunte Modelado de Información (Listas)](https://docs.google.com/document/d/11C2UAbP70dP7sTID-ZxJm_a-5ypKxQUEuZr6GVk5yFI/edit#heading=h.x2xuqlkw85oe)
 * [Apunte - Expresiones Lambdas](https://docs.google.com/document/d/1LKVaZHuJqxf2FcOK17vZjxq0CTT4sohqSsfhWmhQ6ks/edit): _Hasta el punto 3.2_
