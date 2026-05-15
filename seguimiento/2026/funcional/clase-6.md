@@ -10,7 +10,7 @@
 
 ## Material utilizado
 
-* [Video de clase]()
+* [Video de clase](https://youtu.be/aESFa6lHyH0)
 * [Presentación clase](https://docs.google.com/presentation/d/1bJZHFoF5C3wda_9fJX6Rr404bn2alWD2j-4WYpEJp1Q)
 * [Código de clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2026/funcional/practica/clase6.hs)
 
