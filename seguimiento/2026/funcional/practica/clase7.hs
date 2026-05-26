@@ -27,7 +27,13 @@ longitud' lista =
     reducir 0 (\acumulador _ -> acumulador + 1) lista
 
 -- maximum/minimum??
+maximo :: [Number] -> Number
+maximo = foldl1 max
+
+minimo :: [Number] -> Number
+minimo = foldl1 min
 
 -- restatoria??
-
+restatoria numeros = foldr1 (-) numeros
+-- restatoria [1,2,3] = 
 -- sumatoria1
