@@ -37,3 +37,18 @@ minimo = foldl1 min
 restatoria numeros = foldr1 (-) numeros
 -- restatoria [1,2,3] = 
 -- sumatoria1
+
+data Persona = Persona {
+ nombrePersona :: String
+ } deriving (Eq, Show)
+
+personas = [
+ Persona "Inia",
+ Persona "Martin",
+ Persona "Bauti",
+ Persona "Valentina"
+ ]
+
+--todosLosNombres:: [Persona] -> String
+todosLosNombres personas = 
+    foldl (\acumulador persona -> acumulador ++ ", " ++ (nombrePersona persona)) "" personas
