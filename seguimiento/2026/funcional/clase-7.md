@@ -20,4 +20,4 @@
 
 * [Resolución Ejercicio](https://www.youtube.com/watch?v=NEhCiL7JTo8&ab_channel=ParadigmasdeProgramaci%C3%B3n-Mi%C3%A9rcolesTarde)
 * [Apunte - Fold](https://docs.google.com/document/d/1jSrU7lVMan4nbHBETGqvO5VpqJI0KXVWtH7fqnVASPU)
-* [Enunciado TP 2da Entrega](https://docs.google.com/document/d/1HF0mjEEpDHkpbmYgac-aMw8q4K78_YDxZR_Jd13H0wQ)
+* [Enunciado TP 2da Entrega](https://docs.google.com/document/d/19ICBYtMHdWh1X5_fR06gNTjVF2a_n3wZ4zN2RI09aLg/)
