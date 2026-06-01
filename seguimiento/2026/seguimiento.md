@@ -14,9 +14,9 @@
 * Clase 4 - [Aplicación Parcial y Listas](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2026/funcional/clase-4.md)
 * Clase 5 - [Data y Orden Superior](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2026/funcional/clase-5.md)
 * Clase 6 - [Constructores de listas y Definiciones locales](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2026/funcional/clase-6.md)
-* Clase 7 - [Fold y Práctica](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2026/funcional/clase-7.md)
-* Clase 8 - [Evaluación Diferida y Listas Infinitas](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2026/funcional/clase-8.md)
-* Clase 10 - [Currficación y Simulacro de Parcial](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2026/funcional/clase-10.md)
+* Clase 7 - [Fold, Evaluación Diferida y Listas Infinitas](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2026/funcional/clase-7.md)
+* Clase 8 - [Currficación](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2026/funcional/clase-8.md)
+* Clase 9 - [Simulacro de Parcial](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2026/funcional/clase-9.md)
 
 
 ## Paradigma Lógico
