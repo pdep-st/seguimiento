@@ -30,11 +30,11 @@ materia(sintaxis, 2).
 
 
 % Queremos saber cuáles son los años (niveles) de la facu
-año(1).
-año(2).
-año(3).
-año(4).
-año(5).
+anio(1).
+anio(2).
+anio(3).
+anio(4).
+anio(5).
 
 /*
  Además de cada alumno conocemos la nota promedio de cada materia
@@ -66,8 +66,13 @@ aprobo(Alumno, Materia):-
    nota(Alumno, Materia, Nota),
    Nota >= 6.
 
+% estaAlPrincipio/1 -> estaAlPrincipio(Alumno)
+
 % Inversibilidad
 
+estaAlPrincipio(Persona):-
+   alumno(Persona), % generador
+   not(rindio(Persona)).
 
 
 /*
@@ -76,6 +81,22 @@ aprobo(Alumno, Materia):-
         1. materias de un anio?
         2. aprobo materia?
 */
+
+% aproboAnio/2 -> aproboAnio(Alumno, Anio)
+aproboAnio(Alumno, Anio) :-
+   alumno(Alumno),
+   anio(Anio),
+   materia(_, Anio),
+   forall(
+      materia(Materia, Anio),
+      aprobo(Alumno, Materia)
+   ).
+
+
+
+
+
+
 
 % forall/2
 % Para todas
