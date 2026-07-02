@@ -10,7 +10,7 @@
 
 ## Material utilizado
 
-* [Video de la clase]()
+* [Video de la clase](https://youtu.be/yX05CCmDdXE)
 * [Presentación de la clase](https://docs.google.com/presentation/d/1EXEu73mCRGuHG30XI9Jl7q_qh4YP9SSIjSgBcwg5RKQ)
 * [Código de clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2026/logico/practica/clase2.pl)
 
