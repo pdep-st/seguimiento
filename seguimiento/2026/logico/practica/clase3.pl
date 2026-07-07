@@ -1,21 +1,28 @@
 % Messi nació el 24/06/1987
-
+%nacio/2
+nacio(messi, fecha(24, 06, 1987)).
 % Nació messi?
 % Cuándo nació una persona?
-
 /*
 Anto Roccuzzo, cliente número 99102, compró una TV de 80' pagando 200.000
 Mateo Messi, cliente número 3, compró heladera con freezer y 2 puertas pagando 300.000
 Fideo Di María, cliente 11, compró una TV de 40' a 80.000
 */
+cliente(antoRocuzzo, 99102).
+cliente(mateoMessi, 3).
+cliente(fideoDiMaria, 11).
+compra(99102, tv(80), 200000).
+compra(3, heladera(freezer, 2), 300000).
+compra(11, tv(40), 80000).
 
 
 % Qué clientes hicieron compras?
-% ? - 
+hizoCompra(Cliente):- cliente(Cliente, Numero), compra(Numero, _, _).
 % Qué productos fueron comprados por más de 100.000?
-% ? - 
+masDeCienmil(Producto):- compra(_, Producto, Precio), Precio>100000.
 % Existe alguna tv de 80'?
-% ? - 
+vendimosTvDe(Pulgadas):-compra(_, tv(Pulgadas), _).
+% ? - compra(_, tv(80), _).
 
 /* 
 para la natación sabemos el estilo preferido, 
