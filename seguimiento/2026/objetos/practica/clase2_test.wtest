@@ -1,0 +1,33 @@
+import clase2.*
+
+describe "camiones" {
+    test "despues de cargar 10 cajones, la velocidad maxima baja 1 km/h" {
+        // 1. armar el contexto
+        var camionPrueba = camionVerduras
+        // 2. ejecutar el escenario
+        camionPrueba.cargarCajones(10)
+        // 3. validar el resultado
+        assert.equals(79, camionPrueba.velocidadMaxima())
+    }
+
+    test "al cargar 20 cajones, el peso aumento 1000kg" {
+        // 1. armar el contexto
+        var camionPrueba = camionVerduras
+        camionPrueba.cargarCajones(20)
+        // 2. ejecutar el escenario
+        // 3. validar el resultado
+        assert.equals(1000, camionPrueba.peso())
+    }
+
+    test "camion con aceite tiene mas peso que camion con agua" {
+        //1. armar contexto
+        var camionPrueba = camionScanion5000
+
+        var pesoConAgua = camionPrueba.peso()
+        
+        camionPrueba.liquido(aceite)
+        var pesoConAceite = camionPrueba.peso()
+
+        assert.that(pesoConAceite > pesoConAgua)
+    }
+}
