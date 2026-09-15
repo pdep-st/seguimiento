@@ -19,6 +19,10 @@ object camionVerduras {
     method descargarCajones(cantidad) {
         cajonesVerdura -= cantidad
     }
+
+    method recorrer(cantidadKm, velocidad) {
+        kilometraje += cantidadKm
+    }
 }
 
 object agua {
@@ -37,13 +41,40 @@ object camionScanion5000 {
     method peso() {
         return capacidad * liquido.densidad()
     }
+
+    method recorrer(cantidadKm, velocidad) {}
 }
 
 object camionCerealero {
     var nivelDeterioro = 0
     const velocidadMaximaBase = 60
+    var property peso = 0
 
     method velocidadMaxima() {
         return velocidadMaximaBase - nivelDeterioro
+    }
+
+    method recorrer(cantidadKm, velocidad) {
+        nivelDeterioro += (velocidad - 45).max(0)
+    }
+}
+
+object puestoRutatlantica {
+    var precioBase = 7000
+    var velocidadMaximaPasar = 75
+    const kilometrosARecorrer = 400
+
+    method cobrar(camion) {
+        return precioBase + self.calcularAdicional(camion)
+    }
+
+    method calcularAdicional(camion) {
+        return 100 * (camion.peso() / 1000)
+    }
+
+    method dejarPasar(camion) {
+        const velocidad = velocidadMaximaPasar.min(camion.velocidadMaxima())
+
+        camion.recorrer(kilometrosARecorrer, velocidad)
     }
 }
