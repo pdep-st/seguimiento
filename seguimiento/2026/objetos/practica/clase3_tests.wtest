@@ -1,1 +1,54 @@
 import clase3.*
+
+describe "Iña pasea a Lassie" {
+    test "Luego de pasear, pierde 10 de energía quedando en 90" {
+        // 1 - Armar el contexto
+        lassie.energia(100)
+        // 2 - Ejecutar escenario
+        inia.pasear()
+        // 3 - Validar el resultado
+        assert.equals(90, lassie.energia())
+    }
+
+    test "Sin pasear, la energia es la inicial" {
+        lassie.energia(77)
+        assert.equals(77, lassie.energia())
+    }
+
+    test "Luego de pasear dos veces, queda en 80" {
+        lassie.energia(100)
+        inia.pasear()
+        inia.pasear()
+        assert.equals(80, lassie.energia())
+    }
+
+    test "Con 18 de energía inicial, luego de pasear de dos veces, la energía queda en 0" {
+        lassie.energia(18)
+        inia.pasear()
+        assert.equals(8, lassie.energia())
+        inia.pasear()
+        assert.equals(0, lassie.energia())
+    }
+}
+
+describe "Iña pasea a Doja" {
+    test "Luego de pasear 1 kilómetro, pierde 5 de energía quedando en 95" {
+        doja.energia(100)
+        inia.pasear(1)
+        assert.equals(95, doja.energia())
+    }
+
+    test "Luego de pasear 2 kilómetros, pierde 10 de energía quedando en 90" {
+        doja.energia(100)
+        inia.pasear(2)
+        assert.equals(90, doja.energia())
+    }
+
+    test "Con 8 de energía inicial, al pasear 2 veces un kilómetro queda en 0" {
+        doja.energia(8)
+        inia.pasear(1)
+        assert.equals(3, doja.energia())
+        inia.pasear(1)
+        assert.equals(0, doja.energia())
+    }
+}

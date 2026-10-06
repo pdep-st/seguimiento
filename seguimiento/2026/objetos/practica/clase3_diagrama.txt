@@ -1,4 +1,36 @@
 @startuml
+class Perro {
+ energia
+ nombre
+ energia()
+ pasear(distanciaKms)
+}
 
+class Golden {
+ energia
+ nombre
+ energia()
+ pasear(distanciaKms)
+}
 
+class Gato {
+ energia
+ energia()
+ pasear(distanciaKms)
+}
+
+object inia<<WKO>> {
+ mascotas
+ pasear()
+ pasear(distanciaKms)
+}
+
+interface Mascota {
+pasear(distanciaKms)
+}
+
+Mascota <|.. Gato
+Mascota <|.. Perro
+Mascota <|.. Golden
+inia -> "*" Mascota
 @enduml

@@ -11,8 +11,8 @@
 
 ## Material utilizado
 
-* [Presentación de la Clase](https://docs.google.com/presentation/d/1LgonR7dpJAainKL-v-oNdkYJPdW-tL5PpQHsh4XMcDM)
-* [Video de Clase]()
+* [Presentación de la Clase](https://docs.google.com/presentation/d/1u3IxHIm8nhd-QFImoWSXmyJhoucnC666C7HjFSHPlEk)
+* [Video de Clase](https://youtu.be/LRAaS3LwLUM)
 * [Código de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2026/objetos/practica/clase3.wlk)
 * [Tests de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2026/objetos/practica/clase3_tests.wtest)
 * [Diagrama de Clase](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2026/objetos/practica/clase3_diagrama.txt)
@@ -24,3 +24,4 @@
 * [Diagramas UML](https://docs.google.com/document/d/1eXLlNppAX-7E2M8Xxs0MCckdn4XVEYmeQNaS_E1RqTc)
 * [Diagrama de clases](https://docs.google.com/document/d/1eXLlNppAX-7E2M8Xxs0MCckdn4XVEYmeQNaS_E1RqTc/edit#heading=h.ei6ew8w7hv9t)
 * [Tutorial PlantUML](https://github.com/pdep-noche-mavi/tutorial-plantuml)
+* [Clase 4 - 2025](https://github.com/pdep-st/seguimiento/blob/main/seguimiento/2026/objetos/clase-4.md)
